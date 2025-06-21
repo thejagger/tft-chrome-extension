@@ -8,7 +8,7 @@ const path = require('path');
 
 const AUGMENTS_FILE = './assets/augments/tft-set14-augments.json';
 const IMAGES_DIR = './assets/augments/images';
-const QUICK_REF_FILE = './assets/augments/quick-reference.json';
+const QUICK_REF_FILE = './assets/augments/augments-quick-reference.json';
 
 function verifyAugmentsData() {
   console.log('🔍 TFT Set 14 Augments Data Verification\n');

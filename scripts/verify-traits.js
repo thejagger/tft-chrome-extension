@@ -8,8 +8,8 @@ const path = require('path');
 
 class TraitsVerifier {
   constructor() {
-    this.dataPath = './assets/traits/tft-set14-traits-accurate.json';
-    this.activationPath = './assets/traits/activation-levels-accurate.json';
+    this.dataPath = './assets/traits/tft-set14-traits.json';
+    this.activationPath = './assets/traits/traits-activation-levels.json';
   }
 
   loadData() {

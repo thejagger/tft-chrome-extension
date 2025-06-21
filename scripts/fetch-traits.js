@@ -313,40 +313,40 @@ class TFTTraitsCDragonFetcher {
       traits: traits
     };
     
-    const mainPath = path.join(this.outputDir, 'tft-set14-traits-accurate.json');
-    fs.writeFileSync(mainPath, JSON.stringify(mainData, null, 2));
-    console.log(`   ✅ Saved main data: ${mainPath}`);
-    
-    // Quick reference file with essential data only
-    const quickRef = traits.map(trait => ({
-      key: trait.key,
-      name: trait.name,
-      type: trait.type,
-      image: trait.image,
-      activationLevels: trait.activationLevels
-    }));
-    
-    const quickRefPath = path.join(this.outputDir, 'quick-reference-accurate.json');
-    fs.writeFileSync(quickRefPath, JSON.stringify(quickRef, null, 2));
-    console.log(`   ✅ Saved quick reference: ${quickRefPath}`);
+         const mainPath = path.join(this.outputDir, 'tft-set14-traits.json');
+     fs.writeFileSync(mainPath, JSON.stringify(mainData, null, 2));
+     console.log(`   ✅ Saved main data: ${mainPath}`);
+     
+     // Quick reference file with essential data only
+     const quickRef = traits.map(trait => ({
+       key: trait.key,
+       name: trait.name,
+       type: trait.type,
+       image: trait.image,
+       activationLevels: trait.activationLevels
+     }));
+     
+     const quickRefPath = path.join(this.outputDir, 'traits-quick-reference.json');
+     fs.writeFileSync(quickRefPath, JSON.stringify(quickRef, null, 2));
+     console.log(`   ✅ Saved quick reference: ${quickRefPath}`);
 
-    // Create activation levels reference
-    const activationRef = {};
-    traits.forEach(trait => {
-      activationRef[trait.key] = {
-        name: trait.name,
-        levels: trait.activationLevels.reduce((acc, level, index) => {
-          acc[level] = {
-            level: level,
-            description: trait.descriptions[level] || `${trait.name} level ${level} effect`,
-            tierName: this.getTierName(index, trait.activationLevels.length)
-          };
-          return acc;
-        }, {})
-      };
-    });
+     // Create activation levels reference
+     const activationRef = {};
+     traits.forEach(trait => {
+       activationRef[trait.key] = {
+         name: trait.name,
+         levels: trait.activationLevels.reduce((acc, level, index) => {
+           acc[level] = {
+             level: level,
+             description: trait.descriptions[level] || `${trait.name} level ${level} effect`,
+             tierName: this.getTierName(index, trait.activationLevels.length)
+           };
+           return acc;
+         }, {})
+       };
+     });
 
-    const activationPath = path.join(this.outputDir, 'activation-levels-accurate.json');
+     const activationPath = path.join(this.outputDir, 'traits-activation-levels.json');
     fs.writeFileSync(activationPath, JSON.stringify(activationRef, null, 2));
     console.log(`   ✅ Saved activation levels: ${activationPath}`);
     

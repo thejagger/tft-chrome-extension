@@ -33,8 +33,8 @@ class TraitsDataManager {
     try {
       logger.info('Loading TFT Set 14 traits data...');
 
-      // Load main traits data (using accurate Community Dragon data)
-      const traitsUrl = chrome.runtime.getURL('assets/traits/tft-set14-traits-accurate.json');
+      // Load main traits data (using verified Community Dragon data)
+      const traitsUrl = chrome.runtime.getURL('assets/traits/tft-set14-traits.json');
       const traitsResponse = await fetch(traitsUrl);
       if (!traitsResponse.ok) {
         throw new Error(`Failed to load traits data: ${traitsResponse.status}`);
@@ -42,8 +42,8 @@ class TraitsDataManager {
 
       this.traitsData = await traitsResponse.json();
 
-      // Load activation levels data (using accurate data)
-      const activationUrl = chrome.runtime.getURL('assets/traits/activation-levels-accurate.json');
+      // Load activation levels data
+      const activationUrl = chrome.runtime.getURL('assets/traits/traits-activation-levels.json');
       const activationResponse = await fetch(activationUrl);
       if (activationResponse.ok) {
         const activationData = await activationResponse.json();
