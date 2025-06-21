@@ -10,7 +10,7 @@ class TftExtension {
   constructor() {
     this.videoDetector = new VideoDetector();
     this.overlayManager = new OverlayManager();
-    this.cvProcessor = new CvProcessor();
+    this.cvProcessor = new SimpleCvProcessor(); // Using simple CV to avoid OpenCV CSP issues
     this.templateMatcher = new TemplateMatcher(this.cvProcessor);
     this.isActive = false;
     this.cleanupTasks = [];
