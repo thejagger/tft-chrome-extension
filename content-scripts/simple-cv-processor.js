@@ -4,9 +4,6 @@
  * Uses Canvas API for image processing
  */
 
-// Debug: Log that this file is being loaded
-console.log('[DEBUG] simple-cv-processor.js file loaded');
-
 class SimpleCvProcessor {
   constructor() {
     // Note: No this.isReady property - we use the isReady() method instead
@@ -16,14 +13,6 @@ class SimpleCvProcessor {
     this.detectionCache = new Map();
     
     logger.info('Simple CV Processor initialized - no external dependencies');
-    
-    // Debug: Verify methods exist
-    logger.debug('SimpleCvProcessor methods available:', {
-      isReady: typeof this.isReady,
-      processFrame: typeof this.processFrame,
-      getStats: typeof this.getStats,
-      cleanup: typeof this.cleanup
-    });
   }
 
   /**
@@ -504,7 +493,4 @@ class SimpleCvProcessor {
     this.detectionCache.clear();
     logger.info('Simple CV Processor cleaned up');
   }
-}
-
-// Debug: Log that class is defined
-console.log('[DEBUG] SimpleCvProcessor class defined:', typeof SimpleCvProcessor); 
+} 

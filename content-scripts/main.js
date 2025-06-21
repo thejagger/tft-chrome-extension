@@ -3,9 +3,6 @@
  * Entry point that coordinates video detection and overlay management
  */
 
-// Debug: Log that main.js is loading
-console.log('[DEBUG] main.js file loaded, SimpleCvProcessor available:', typeof SimpleCvProcessor);
-
 /**
  * Main extension controller class
  */
@@ -13,20 +10,7 @@ class TftExtension {
   constructor() {
     this.videoDetector = new VideoDetector();
     this.overlayManager = new OverlayManager();
-    
-    // Debug: Check if SimpleCvProcessor class exists
-    logger.debug('SimpleCvProcessor class available:', typeof SimpleCvProcessor);
-    
-    this.cvProcessor = new SimpleCvProcessor(); // Using simple CV to avoid OpenCV CSP issues
-    
-    // Debug: Check cvProcessor object
-    logger.debug('cvProcessor created:', {
-      type: typeof this.cvProcessor,
-      constructor: this.cvProcessor.constructor.name,
-      hasIsReady: typeof this.cvProcessor.isReady,
-      methods: Object.getOwnPropertyNames(Object.getPrototypeOf(this.cvProcessor))
-    });
-    
+    this.cvProcessor = new SimpleCvProcessor();
     this.templateMatcher = new TemplateMatcher(this.cvProcessor);
     this.isActive = false;
     this.cleanupTasks = [];
@@ -235,19 +219,10 @@ class TftExtension {
    * @param {HTMLVideoElement} videoElement - Video element to process
    */
   startCvProcessing(videoElement) {
-    // Debug: Check what's actually on the cvProcessor object
-    console.log('[DEBUG] cvProcessor object inspection:', {
-      cvProcessor: this.cvProcessor,
-      type: typeof this.cvProcessor,
-      constructor: this.cvProcessor ? this.cvProcessor.constructor.name : 'N/A',
-      isReady: this.cvProcessor ? typeof this.cvProcessor.isReady : 'N/A',
-      methods: this.cvProcessor ? Object.getOwnPropertyNames(Object.getPrototypeOf(this.cvProcessor)) : 'N/A'
-    });
-    
     if (!this.cvProcessor.isReady()) {
-      logger.info('OpenCV not ready yet, will start CV processing when available');
+      logger.info('CV processor not ready yet, will start processing when available');
       
-      // Check periodically for OpenCV readiness
+      // Check periodically for CV processor readiness
       const checkReadiness = setInterval(() => {
         if (this.cvProcessor.isReady()) {
           clearInterval(checkReadiness);
