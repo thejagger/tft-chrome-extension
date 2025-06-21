@@ -38,6 +38,13 @@
             <span class="status-text">Checking...</span>
           </span>
         </div>
+        <div class="status-item">
+          <span class="status-label">Computer Vision:</span>
+          <span class="status-indicator" id="cv-status">
+            <span class="status-dot"></span>
+            <span class="status-text">Loading...</span>
+          </span>
+        </div>
       </section>
 
       <!-- Controls Section -->
@@ -47,6 +54,7 @@
         <button id="refresh-detection" class="control-button">
           Refresh Detection
         </button>
+        <button id="test-cv" class="control-button">Test CV Processing</button>
       </section>
 
       <!-- Information Section -->
@@ -59,6 +67,14 @@
         <div class="info-item">
           <span class="info-label">Page URL:</span>
           <span class="info-value" id="page-url">-</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Elements Detected:</span>
+          <span class="info-value" id="detected-elements">-</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Last Detection:</span>
+          <span class="info-value" id="last-detection">-</span>
         </div>
       </section>
 

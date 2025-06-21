@@ -53,6 +53,34 @@ const CONFIG = {
     CLEANUP_INTERVAL: 30000, // Cleanup every 30 seconds
   },
 
+  // Computer Vision Settings
+  CV: {
+    PROCESSING_INTERVAL: 2000, // Process frames every 2 seconds
+    MATCHING_THRESHOLD: 0.75, // Template matching confidence threshold
+    SCALE_FACTORS: [0.8, 1.0, 1.2], // Multi-scale template matching
+    NMS_OVERLAP_THRESHOLD: 0.3, // Non-maximum suppression overlap threshold
+    MAX_PROCESSING_TIME: 100, // Maximum time per frame (ms)
+    ENABLE_VISUALIZATION: false, // Show detection boxes (for debugging)
+  },
+
+  // TFT Element Regions (typical positions for 640x360 streams)
+  TFT_REGIONS: {
+    AUGMENTS: [
+      { x: 50, y: 50, width: 300, height: 100, name: 'top_augments' },
+      { x: 400, y: 50, width: 200, height: 100, name: 'side_augments' }
+    ],
+    CHAMPIONS: [
+      { x: 100, y: 200, width: 450, height: 120, name: 'board' },
+      { x: 50, y: 320, width: 550, height: 40, name: 'bench' }
+    ],
+    SHOP: [
+      { x: 50, y: 270, width: 550, height: 50, name: 'shop_area' }
+    ],
+    GOLD: [
+      { x: 500, y: 10, width: 100, height: 30, name: 'gold_display' }
+    ]
+  },
+
   // Logging Settings
   LOGGING: {
     ENABLED: true,

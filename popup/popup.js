@@ -9,10 +9,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     extensionStatus: document.getElementById('extension-status'),
     videoStatus: document.getElementById('video-status'),
     tftStatus: document.getElementById('tft-status'),
+    cvStatus: document.getElementById('cv-status'),
     testOverlayBtn: document.getElementById('test-overlay'),
     refreshBtn: document.getElementById('refresh-detection'),
+    testCvBtn: document.getElementById('test-cv'),
     videoResolution: document.getElementById('video-resolution'),
     pageUrl: document.getElementById('page-url'),
+    detectedElements: document.getElementById('detected-elements'),
+    lastDetection: document.getElementById('last-detection'),
     reportIssue: document.getElementById('report-issue'),
     viewLogs: document.getElementById('view-logs')
   };
@@ -72,12 +76,18 @@ document.addEventListener('DOMContentLoaded', async () => {
                     response.hasVideo ? 'Detected' : 'Not found');
         updateStatus('tft', response.isTftStream ? 'active' : 'warning',
                     response.isTftStream ? 'TFT Stream' : 'Non-TFT');
+        updateStatus('cv', response.cvReady ? 'active' : 'warning',
+                    response.cvReady ? 'Ready' : 'Loading');
         
         // Update video resolution if available
         if (response.videoInfo) {
           elements.videoResolution.textContent = 
             `${response.videoInfo.width}x${response.videoInfo.height}`;
         }
+        
+        // Update CV information
+        elements.detectedElements.textContent = response.detectedElements || '0';
+        elements.lastDetection.textContent = response.lastDetection || 'None';
       }
     } catch (error) {
       console.error('Error getting status:', error);
@@ -119,6 +129,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Refresh detection button
     elements.refreshBtn.addEventListener('click', async () => {
       await initializePopup();
+    });
+
+    // Test CV processing button
+    elements.testCvBtn.addEventListener('click', async () => {
+      try {
+        const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+        const response = await chrome.tabs.sendMessage(tab.id, { action: 'testCvProcessing' });
+        
+        if (response.success) {
+          // Refresh status after a moment to show detection results
+          setTimeout(async () => {
+            await initializePopup();
+          }, 2000);
+        }
+      } catch (error) {
+        console.error('Error testing CV processing:', error);
+      }
     });
 
     // Report issue link

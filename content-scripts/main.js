@@ -10,8 +10,12 @@ class TftExtension {
   constructor() {
     this.videoDetector = new VideoDetector();
     this.overlayManager = new OverlayManager();
+    this.cvProcessor = new CvProcessor();
+    this.templateMatcher = new TemplateMatcher(this.cvProcessor);
     this.isActive = false;
     this.cleanupTasks = [];
+    this.cvProcessingInterval = null;
+    this.detectedElements = [];
   }
 
   /**
@@ -146,6 +150,9 @@ class TftExtension {
         
         // Test frame extraction capability
         this.testFrameExtraction(videoElement);
+        
+        // Start computer vision processing
+        this.startCvProcessing(videoElement);
       } else {
         logger.error('Failed to initialize overlay');
       }
@@ -208,6 +215,119 @@ class TftExtension {
   }
 
   /**
+   * Start computer vision processing
+   * @param {HTMLVideoElement} videoElement - Video element to process
+   */
+  startCvProcessing(videoElement) {
+    if (!this.cvProcessor.isReady()) {
+      logger.info('OpenCV not ready yet, will start CV processing when available');
+      
+      // Check periodically for OpenCV readiness
+      const checkReadiness = setInterval(() => {
+        if (this.cvProcessor.isReady()) {
+          clearInterval(checkReadiness);
+          this.startCvProcessing(videoElement);
+        }
+      }, 1000);
+      
+      return;
+    }
+
+    logger.info('Starting computer vision processing...');
+    
+    // Start periodic CV processing
+    this.cvProcessingInterval = setInterval(async () => {
+      await this.processVideoFrame(videoElement);
+    }, CONFIG.CV.PROCESSING_INTERVAL);
+  }
+
+  /**
+   * Process a single video frame for TFT elements
+   * @param {HTMLVideoElement} videoElement - Video element
+   */
+  async processVideoFrame(videoElement) {
+    try {
+      if (!videoElement || !this.cvProcessor.isReady()) {
+        return;
+      }
+
+      logger.debug('Processing video frame for TFT elements...');
+      
+      // Process frame
+      const results = await this.cvProcessor.processFrame(videoElement);
+      
+      if (results.elements.length > 0) {
+        this.detectedElements = results.elements;
+        logger.info('TFT elements detected', {
+          count: results.elements.length,
+          processingTime: Math.round(results.processingTime),
+          elements: results.elements.map(e => ({ type: e.type, confidence: e.confidence }))
+        });
+        
+        // Update overlay with detected elements
+        this.updateOverlayWithElements(results.elements);
+      } else {
+        logger.debug('No TFT elements detected in frame');
+      }
+      
+    } catch (error) {
+      logger.error('Error processing video frame', error);
+    }
+  }
+
+  /**
+   * Update overlay with detected TFT elements
+   * @param {Array} elements - Detected elements
+   */
+  updateOverlayWithElements(elements) {
+    if (!this.overlayManager || elements.length === 0) {
+      return;
+    }
+
+    // Create overlay content showing detected elements
+    const elementSummary = elements.reduce((acc, element) => {
+      acc[element.type] = (acc[element.type] || 0) + 1;
+      return acc;
+    }, {});
+
+    const overlayContent = `
+      <div style="padding: 12px; color: white; font-family: Arial, sans-serif;">
+        <h3 style="margin: 0 0 8px 0; color: #00ff00;">TFT Elements Detected</h3>
+        ${Object.entries(elementSummary).map(([type, count]) => 
+          `<p style="margin: 2px 0; font-size: 13px;">${type}: ${count}</p>`
+        ).join('')}
+        <p style="margin: 4px 0 0 0; font-size: 11px; opacity: 0.8;">
+          Total: ${elements.length} elements
+        </p>
+        ${CONFIG.CV.ENABLE_VISUALIZATION ? 
+          '<p style="font-size: 10px; color: #ffa500;">Visualization enabled</p>' : ''
+        }
+      </div>
+    `;
+
+    this.overlayManager.updateContent(overlayContent);
+    this.overlayManager.show();
+
+    // Hide overlay after 3 seconds to avoid cluttering
+    setTimeout(() => {
+      if (this.overlayManager) {
+        this.overlayManager.hide();
+      }
+    }, 3000);
+  }
+
+  /**
+   * Stop computer vision processing
+   */
+  stopCvProcessing() {
+    if (this.cvProcessingInterval) {
+      clearInterval(this.cvProcessingInterval);
+      this.cvProcessingInterval = null;
+      logger.info('Computer vision processing stopped');
+    }
+  }
+
+  /**
    * Clean up extension resources
    */
   cleanup() {
@@ -218,6 +338,12 @@ class TftExtension {
     try {
       // Stop video detection
       this.videoDetector.stopMonitoring();
+      
+      // Stop CV processing
+      this.stopCvProcessing();
+      
+      // Clean up CV processor
+      this.cvProcessor.cleanup();
       
       // Clean up overlay
       this.overlayManager.cleanup();
@@ -249,7 +375,12 @@ class TftExtension {
       isActive: this.isActive,
       hasVideo: !!this.videoDetector.getCurrentVideo(),
       isOverlayVisible: this.overlayManager.isOverlayVisible(),
-      isTftStream: this.videoDetector.isTftStream()
+      isTftStream: this.videoDetector.isTftStream(),
+      cvReady: this.cvProcessor.isReady(),
+      cvStats: this.cvProcessor.getStats(),
+      detectedElements: this.detectedElements.length,
+      lastDetection: this.detectedElements.length > 0 ? 
+        this.detectedElements.map(e => e.type).join(', ') : 'None'
     };
   }
 }
@@ -286,6 +417,20 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         sendResponse({ success: true });
       } else {
         sendResponse({ success: false, error: 'Overlay not initialized' });
+      }
+      break;
+      
+    case 'testCvProcessing':
+      if (tftExtension.cvProcessor.isReady()) {
+        const video = tftExtension.videoDetector.getCurrentVideo();
+        if (video) {
+          tftExtension.processVideoFrame(video);
+          sendResponse({ success: true, message: 'CV processing triggered' });
+        } else {
+          sendResponse({ success: false, error: 'No video available' });
+        }
+      } else {
+        sendResponse({ success: false, error: 'OpenCV not ready' });
       }
       break;
       

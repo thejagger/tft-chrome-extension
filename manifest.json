@@ -16,10 +16,14 @@
   "content_scripts": [
     {
       "matches": ["https://www.twitch.tv/*"],
-      "js": [
-        "content-scripts/config.js",
+                      "js": [
+          "lib/opencv-4.8.0.js",
+          "content-scripts/opencv-checker.js",
+          "content-scripts/config.js",
         "content-scripts/logger.js",
         "content-scripts/video-detector.js",
+        "content-scripts/cv-processor.js",
+        "content-scripts/template-matcher.js",
         "content-scripts/overlay-manager.js",
         "content-scripts/main.js"
       ],
