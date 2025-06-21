@@ -81,7 +81,7 @@ const CONFIG = {
   // Logging Settings
   LOGGING: {
     ENABLED: true,
-    LEVEL: 'debug', // 'debug', 'info', 'warn', 'error' - temporarily set to debug
+    LEVEL: 'info', // 'debug', 'info', 'warn', 'error'
     PREFIX: '[TFT-EXT]',
   },
 }; 
