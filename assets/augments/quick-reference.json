@@ -1,0 +1,812 @@
+[
+  {
+    "key": "TFT_Augment_AxiomArc3",
+    "title": "Axiom Arc III",
+    "tier": "Prismatic",
+    "image": "Axiom-Arc-III.png"
+  },
+  {
+    "key": "TFT_Augment_BulkyBuddies3",
+    "title": "Bulky Buddies III",
+    "tier": "Prismatic",
+    "image": "BulkyBuddies_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_CrownguardSpirit",
+    "title": "Crown's Will",
+    "tier": "Prismatic",
+    "image": "Will-of-the-Crown-II.png"
+  },
+  {
+    "key": "TFT_Augment_PrismaticPipeline",
+    "title": "Prismatic Pipeline",
+    "tier": "Prismatic",
+    "image": "PrismaticPipeline_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_WorthTheWaitPrismatic",
+    "title": "Worth the Wait II",
+    "tier": "Prismatic",
+    "image": "WorthTheWait_III.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_AllThatShimmersPlus",
+    "title": "All That Shimmers+",
+    "tier": "Gold",
+    "image": "All-that-Shimmers-II.png"
+  },
+  {
+    "key": "TFT_Augment_BlazingSoul2",
+    "title": "Blazing Soul II",
+    "tier": "Gold",
+    "image": "Blazing-Soul-III.png"
+  },
+  {
+    "key": "TFT_Augment_BranchingOutPlus",
+    "title": "Branching Out+",
+    "tier": "Gold",
+    "image": "Branching-Out-I.png"
+  },
+  {
+    "key": "TFT_Augment_BronzeForLife2",
+    "title": "Bronze For Life II",
+    "tier": "Gold",
+    "image": "BronzeForLife_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_BulkyBuddies2",
+    "title": "Bulky Buddies II",
+    "tier": "Gold",
+    "image": "BulkyBuddies_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_ClimbTheLadder2",
+    "title": "Climb The Ladder II",
+    "tier": "Gold",
+    "image": "ClimbtheLadder_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_DiversifiedPortfolio2",
+    "title": "Diversified Portfolio+",
+    "tier": "Gold",
+    "image": "DiversifiedPortfolio1_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_EyeForAnEyePlus",
+    "title": "Eye For An Eye+",
+    "tier": "Gold",
+    "image": "EyeforanEye_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_FiresalePlus",
+    "title": "Firesale",
+    "tier": "Gold",
+    "image": "Firesale_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_GlassCannonII",
+    "title": "Glass Cannon II",
+    "tier": "Gold",
+    "image": "GlassCannon_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_WealthyRehab2",
+    "title": "Health is Wealth II",
+    "tier": "Gold",
+    "image": "Health-is-Wealth-II.png"
+  },
+  {
+    "key": "TFT_Augment_HeroicGrabBagPlus",
+    "title": "Heroic Grab Bag+",
+    "tier": "Gold",
+    "image": "Heroic-Grab-Bag-II.png"
+  },
+  {
+    "key": "TFT_Augment_HeroicGrabBagPlusPlus",
+    "title": "Heroic Grab Bag++",
+    "tier": "Gold",
+    "image": "Heroic-Grab-Bag-II.png"
+  },
+  {
+    "key": "TFT_Augment_InvestedPlus",
+    "title": "Invested+",
+    "tier": "Gold",
+    "image": "Invested-III.png"
+  },
+  {
+    "key": "TFT_Augment_InvestedPlusPlus",
+    "title": "Invested++",
+    "tier": "Gold",
+    "image": "Invested-III.png"
+  },
+  {
+    "key": "TFT_Augment_InvestmentStrategy2",
+    "title": "Investment Strategy II",
+    "tier": "Gold",
+    "image": "InvestmentStrategy_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_ItemCollector2",
+    "title": "Item Collector II",
+    "tier": "Gold",
+    "image": "ItemCollector_II.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_Manaflow2",
+    "title": "Manaflow II",
+    "tier": "Gold",
+    "image": "Manaflow_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Mentorship2",
+    "title": "Mentorship II",
+    "tier": "Gold",
+    "image": "Mentorship-II.png"
+  },
+  {
+    "key": "TFT_Augment_AllForOneII",
+    "title": "One For All II",
+    "tier": "Gold",
+    "image": "AllForOne_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_PiercingLotus2",
+    "title": "Piercing Lotus II",
+    "tier": "Gold",
+    "image": "Piercing-Lotus-III.png"
+  },
+  {
+    "key": "TFT_Augment_PlaceboPlus",
+    "title": "Placebo+",
+    "tier": "Gold",
+    "image": "Placebo_I.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_RiggedShopPlus",
+    "title": "Rigged Shop+",
+    "tier": "Gold",
+    "image": "RiggedShop_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_StarryNightPlus",
+    "title": "Starry Night+",
+    "tier": "Gold",
+    "image": "StarryNight_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_SupportMiningPlus",
+    "title": "Support Mining+",
+    "tier": "Gold",
+    "image": "Support-Mining-I.png"
+  },
+  {
+    "key": "TFT_Augment_TombRaider2",
+    "title": "Tomb Raider II",
+    "tier": "Gold",
+    "image": "TombRaider_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Trifecta2",
+    "title": "Trifecta II",
+    "tier": "Gold",
+    "image": "Trifecta-III.png"
+  },
+  {
+    "key": "TFT_Augment_MagicRoll",
+    "title": "A Magic Roll",
+    "tier": "Silver",
+    "image": "A-Magical-Roll-II.png"
+  },
+  {
+    "key": "TFT_Augment_AnExaltedAdventure",
+    "title": "An Exalted Adventure",
+    "tier": "Silver",
+    "image": "ExaltedAdventure_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Backup",
+    "title": "Backup",
+    "tier": "Silver",
+    "image": "Backup-I.png"
+  },
+  {
+    "key": "TFT_Augment_BadLuckProtection",
+    "title": "Bad Luck Protection",
+    "tier": "Silver",
+    "image": "BadLuckProtection_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_BeltOverflow",
+    "title": "Belt Overflow",
+    "tier": "Silver",
+    "image": "BeltOverflow_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_BlazingSoul",
+    "title": "Blazing Soul I",
+    "tier": "Silver",
+    "image": "Blazing-Soul-II.png"
+  },
+  {
+    "key": "TFT_Augment_BranchingOut",
+    "title": "Branching Out",
+    "tier": "Silver",
+    "image": "Branching-Out-I.png"
+  },
+  {
+    "key": "TFT_Augment_BRB",
+    "title": "BRB",
+    "tier": "Silver",
+    "image": "BRB-II.png"
+  },
+  {
+    "key": "TFT_Augment_BronzeForLifeI",
+    "title": "Bronze For Life I",
+    "tier": "Silver",
+    "image": "BronzeForLife_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_BulkyBuddies1",
+    "title": "Bulky Buddies I",
+    "tier": "Silver",
+    "image": "BulkyBuddies_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFTTutorial_Augment_FrontRowHealth1",
+    "title": "Bulwark",
+    "tier": "Silver",
+    "image": "Tutorial-Bulwark-I.png"
+  },
+  {
+    "key": "TFT_Augment_CalculatedEnhancement",
+    "title": "Calculated Enhancement",
+    "tier": "Silver",
+    "image": "CalculatedEnhancement_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_CalledShot",
+    "title": "Called Shot",
+    "tier": "Silver",
+    "image": "CalledShot_I.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_ChemtechOverdrive",
+    "title": "Chemtech Overdrive",
+    "tier": "Silver",
+    "image": "ChemtechOverdrive_III.TFT_Set14.png"
+  },
+  {
+    "key": "TFT_Augment_ClimbTheLadder1",
+    "title": "Climb The Ladder I",
+    "tier": "Silver",
+    "image": "ClimbtheLadder_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_ClockworkAccelerator",
+    "title": "Clockwork Accelerator",
+    "tier": "Silver",
+    "image": "ClockworkAccelerator_II.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_CloningFacility",
+    "title": "Cloning Facility",
+    "tier": "Silver",
+    "image": "TrickMirror_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_CookingPot",
+    "title": "Cooking Pot",
+    "tier": "Silver",
+    "image": "CookingPot_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Coronation",
+    "title": "Coronation",
+    "tier": "Silver",
+    "image": "Coronation_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Corrosion",
+    "title": "Corrosion",
+    "tier": "Silver",
+    "image": "Corrosion_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_CraftedCrafting",
+    "title": "Crafted Crafting",
+    "tier": "Silver",
+    "image": "CraftedCrafting_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFTTutorial_Augment_WithItemHealth2",
+    "title": "Cybernetic Mass",
+    "tier": "Silver",
+    "image": "Cybernetic-Bulk-II.png"
+  },
+  {
+    "key": "TFT_Augment_HeadStart",
+    "title": "Delayed Start",
+    "tier": "Silver",
+    "image": "HeadStart_I.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_DiversifiedPortfolio1",
+    "title": "Diversified Portfolio",
+    "tier": "Silver",
+    "image": "DiversifiedPortfolio_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Dominance3",
+    "title": "Dominance",
+    "tier": "Silver",
+    "image": "Dominance_III.TFT_Set14.png"
+  },
+  {
+    "key": "TFT_Augment_DualPurpose",
+    "title": "Dual Purpose",
+    "tier": "Silver",
+    "image": "DualPurpose_III.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_Dummify",
+    "title": "Dummify",
+    "tier": "Silver",
+    "image": "Dummify_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_DuoQueue",
+    "title": "Duo Queue",
+    "tier": "Silver",
+    "image": "DuoQueue_II.TFT_Set12.png"
+  },
+  {
+    "key": "TFTTutorial_Augment_WithItemAS2",
+    "title": "Elite Vanguard",
+    "tier": "Silver",
+    "image": "Tutorial-Elite-Vanguard-II.png"
+  },
+  {
+    "key": "TFT_Augment_ExpectedUnexpectedness",
+    "title": "Expected Unexpectedness",
+    "tier": "Silver",
+    "image": "Addicted-to-Rolling-III.png"
+  },
+  {
+    "key": "TFT_Augment_EyeForAnEye",
+    "title": "Eye For An Eye",
+    "tier": "Silver",
+    "image": "EyeforanEye_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_FinalPolish",
+    "title": "Final Polish",
+    "tier": "Silver",
+    "image": "Final-Polish-III.png"
+  },
+  {
+    "key": "TFT_Augment_FindYourCenter",
+    "title": "Find Your Center",
+    "tier": "Silver",
+    "image": "FindYourCenter_I.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_Flexible",
+    "title": "Flexible",
+    "tier": "Silver",
+    "image": "ComponentGrabBag-III.png"
+  },
+  {
+    "key": "TFT_Augment_FlurryOfBlows",
+    "title": "Flurry of Blows",
+    "tier": "Silver",
+    "image": "FlurryofBlows_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_ForwardThinking",
+    "title": "Forward Thinking",
+    "tier": "Silver",
+    "image": "ForwardThinking_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_GlassCannonI",
+    "title": "Glass Cannon I",
+    "tier": "Silver",
+    "image": "GlassCannon_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_GoldForDummies",
+    "title": "Gold For Dummies",
+    "tier": "Silver",
+    "image": "GoldforDummies_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Golemify",
+    "title": "Golemify",
+    "tier": "Silver",
+    "image": "Golemify_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_GreaterMoonlight",
+    "title": "Greater Moonlight",
+    "tier": "Silver",
+    "image": "GreaterMoonlight_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_HardCommit",
+    "title": "Hard Commit",
+    "tier": "Silver",
+    "image": "HardCommit_III.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_WealthyRehab1",
+    "title": "Health is Wealth I",
+    "tier": "Silver",
+    "image": "Health-is-Wealth-I.png"
+  },
+  {
+    "key": "TFT_Augment_HighVoltage",
+    "title": "High Voltage",
+    "tier": "Silver",
+    "image": "HighVoltage_II.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_ImTheCarryNow",
+    "title": "I'm the Carry Now",
+    "tier": "Silver",
+    "image": "ImtheCarrynow_III.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_RanduinsImmovableObject",
+    "title": "Immovable Object",
+    "tier": "Silver",
+    "image": "RanduinsImmovableObject_III.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_InvestmentStrategy1",
+    "title": "Investment Strategy I",
+    "tier": "Silver",
+    "image": "InvestmentStrategy_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_ItemCollector1",
+    "title": "Item Collector I",
+    "tier": "Silver",
+    "image": "ItemCollector_I.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_Kingslayer",
+    "title": "Kingslayer",
+    "tier": "Silver",
+    "image": "Kingslayer_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Lineup",
+    "title": "Lineup",
+    "tier": "Silver",
+    "image": "Lineup-I.png"
+  },
+  {
+    "key": "TFT_Augment_GuardbreakerSpirit",
+    "title": "Mace's Will",
+    "tier": "Silver",
+    "image": "Will-of-the-Flail-II.png"
+  },
+  {
+    "key": "TFT_Augment_MirroredMonetization",
+    "title": "Malicious Monetization",
+    "tier": "Silver",
+    "image": "MirroredMonetization_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Manaflow1",
+    "title": "Manaflow I",
+    "tier": "Silver",
+    "image": "Manaflow_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_MaxCap",
+    "title": "Max Cap",
+    "tier": "Silver",
+    "image": "MaxCap_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Mentorship1",
+    "title": "Mentorship I",
+    "tier": "Silver",
+    "image": "Mentorship-I.png"
+  },
+  {
+    "key": "TFT_Augment_Moonlight",
+    "title": "Moonlight",
+    "tier": "Silver",
+    "image": "Moonlight_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_NoScoutNoPivot",
+    "title": "NO SCOUT NO PIVOT",
+    "tier": "Silver",
+    "image": "NoScoutNoPivot_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_NobleSacrifice",
+    "title": "Noble Sacrifice",
+    "tier": "Silver",
+    "image": "ANobleSacrifice_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_OneBuffTwoBuff",
+    "title": "One Buff, Two Buff",
+    "tier": "Silver",
+    "image": "OneBuffTwoBuff_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_AllForOneI",
+    "title": "One For All I",
+    "tier": "Silver",
+    "image": "AllForOne_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Overheal",
+    "title": "Overheal",
+    "tier": "Silver",
+    "image": "Overheal_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_PairOfFours",
+    "title": "Pair of Fours",
+    "tier": "Silver",
+    "image": "PairofFours_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_PatienceIsAVirtue",
+    "title": "Patience is a Virtue",
+    "tier": "Silver",
+    "image": "PatienceIsAVirtue_I.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_PiercingLotus1",
+    "title": "Piercing Lotus I",
+    "tier": "Silver",
+    "image": "Piercing-Lotus-II.png"
+  },
+  {
+    "key": "TFT_Augment_Pilfer",
+    "title": "Pilfer",
+    "tier": "Silver",
+    "image": "Pilfer_II.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_Pirates3",
+    "title": "Pirates",
+    "tier": "Silver",
+    "image": "Pirates3.png"
+  },
+  {
+    "key": "TFT_Augment_Placebo",
+    "title": "Placebo",
+    "tier": "Silver",
+    "image": "Placebo_I.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_Pyromaniac",
+    "title": "Pyromaniac",
+    "tier": "Silver",
+    "image": "Pyromaniac_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_QualityOverQuantity",
+    "title": "Quality Over Quantity",
+    "tier": "Silver",
+    "image": "QualityoverQuantity_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Replication",
+    "title": "Replication",
+    "tier": "Silver",
+    "image": "Replication-II.png"
+  },
+  {
+    "key": "TFT_Augment_RestartMission",
+    "title": "Restart Mission",
+    "tier": "Silver",
+    "image": "RestartMission_I.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_SatedSpellweaver",
+    "title": "Sated Spellweaver",
+    "tier": "Silver",
+    "image": "SatedSpellweaver_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Scavenger",
+    "title": "Scavenger",
+    "tier": "Silver",
+    "image": "Scavenger_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_ShareTheSpotlight",
+    "title": "Share the Spotlight",
+    "tier": "Silver",
+    "image": "ShareSpotlight3.png"
+  },
+  {
+    "key": "TFT_Augment_ShimmerscaleEssence",
+    "title": "Shimmerscale Essence",
+    "tier": "Silver",
+    "image": "ShimmerscaleEssence_III.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_ShopGlitch",
+    "title": "Shop Glitch",
+    "tier": "Silver",
+    "image": "ShopGlitch_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_ShojinSpirit",
+    "title": "Spear's Will",
+    "tier": "Silver",
+    "image": "Will-of-the-Spear-II.png"
+  },
+  {
+    "key": "TFT_Augment_SpiritLink1",
+    "title": "Spirit Link",
+    "tier": "Silver",
+    "image": "SpiritLink_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFTTutorial_Augment_FrontRowMana1",
+    "title": "Splash Zone",
+    "tier": "Silver",
+    "image": "Tutorial-Splash-Zone-I.png"
+  },
+  {
+    "key": "TFT_Augment_Sponging",
+    "title": "Sponging",
+    "tier": "Silver",
+    "image": "Sponging_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_StarryNight",
+    "title": "Starry Night",
+    "tier": "Silver",
+    "image": "StarryNight_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_SubscriptionService",
+    "title": "Subscription Service",
+    "tier": "Silver",
+    "image": "SubscriptionService_III.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_SupportMining",
+    "title": "Support Mining",
+    "tier": "Silver",
+    "image": "Support-Mining-I.png"
+  },
+  {
+    "key": "TFT_Augment_Survivor",
+    "title": "Survivor",
+    "tier": "Silver",
+    "image": "Survivor_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFTTutorial_Augment_BackRowAS1",
+    "title": "Swift Strike",
+    "tier": "Silver",
+    "image": "Tutorial-Swift-Strike-I.png"
+  },
+  {
+    "key": "TFT_Augment_SwordOverflow",
+    "title": "Sword Overflow",
+    "tier": "Silver",
+    "image": "BladeOverflow_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_TableScraps",
+    "title": "Table Scraps",
+    "tier": "Silver",
+    "image": "TableScraps_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_TacticiansKitchen",
+    "title": "Tactician's Kitchen",
+    "tier": "Silver",
+    "image": "TacticiansKitchen_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_ThornPlatedArmor",
+    "title": "Thorn-Plated Armor",
+    "tier": "Silver",
+    "image": "ThornPlatedArmor_II.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_TitanicTitan",
+    "title": "Titanic Titan",
+    "tier": "Silver",
+    "image": "TitanicTitan_I.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_TombRaider1",
+    "title": "Tomb Raider I",
+    "tier": "Silver",
+    "image": "TombRaider_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_TowerDefense",
+    "title": "Tower Defense",
+    "tier": "Silver",
+    "image": "TowerDefense_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_TraitTracker",
+    "title": "Trait Tracker",
+    "tier": "Silver",
+    "image": "TraitTracker_II.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_Trifecta1",
+    "title": "Trifecta I",
+    "tier": "Silver",
+    "image": "Trifecta-II.png"
+  },
+  {
+    "key": "TFT_Augment_TwoMuchValue",
+    "title": "Two Much Value",
+    "tier": "Silver",
+    "image": "TwoMuchValue_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_TwoTrick",
+    "title": "Two Trick",
+    "tier": "Silver",
+    "image": "Two-Trick-II.png"
+  },
+  {
+    "key": "TFTTutorial_Augment_WithoutItemAS2",
+    "title": "Unhindered",
+    "tier": "Silver",
+    "image": "Unladen-Airspeed-Velocity-II.png"
+  },
+  {
+    "key": "TFT_Augment_UpwardMobility",
+    "title": "Upward Mobility",
+    "tier": "Silver",
+    "image": "UpwardMobility_III.TFT_Set12.png"
+  },
+  {
+    "key": "TFT_Augment_Dhampyr",
+    "title": "Vampiric Vitality",
+    "tier": "Silver",
+    "image": "Dhampyr_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Voidborne",
+    "title": "Void Swarm",
+    "tier": "Silver",
+    "image": "Void-Swarm-III.png"
+  },
+  {
+    "key": "TFT_Augment_VoidborneHR",
+    "title": "Void Swarm",
+    "tier": "Silver",
+    "image": "Void-Swarm-III.png"
+  },
+  {
+    "key": "TFT_Augment_WandOverflow",
+    "title": "Wand Overflow",
+    "tier": "Silver",
+    "image": "WandOverflow_III.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_Warpath",
+    "title": "Warpath",
+    "tier": "Silver",
+    "image": "Warpath_II.TFT_Set13.png"
+  },
+  {
+    "key": "TFT_Augment_WorthTheWaitGold",
+    "title": "Worth the Wait",
+    "tier": "Silver",
+    "image": "WorthTheWait_II.TFT_Set12.png"
+  }
+]

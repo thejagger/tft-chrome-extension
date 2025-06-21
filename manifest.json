@@ -17,8 +17,9 @@
     {
       "matches": ["https://www.twitch.tv/*"],
                       "js": [
-          "content-scripts/config.js",
+        "content-scripts/config.js",
         "content-scripts/logger.js",
+        "content-scripts/augments-data-manager.js",
         "content-scripts/video-detector.js",
         "content-scripts/simple-cv-processor.js",
         "content-scripts/overlay-manager.js",
