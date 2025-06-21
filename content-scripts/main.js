@@ -3,6 +3,9 @@
  * Entry point that coordinates video detection and overlay management
  */
 
+// Debug: Log that main.js is loading
+console.log('[DEBUG] main.js file loaded, SimpleCvProcessor available:', typeof SimpleCvProcessor);
+
 /**
  * Main extension controller class
  */
