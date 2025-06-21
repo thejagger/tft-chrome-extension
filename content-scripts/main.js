@@ -235,6 +235,15 @@ class TftExtension {
    * @param {HTMLVideoElement} videoElement - Video element to process
    */
   startCvProcessing(videoElement) {
+    // Debug: Check what's actually on the cvProcessor object
+    console.log('[DEBUG] cvProcessor object inspection:', {
+      cvProcessor: this.cvProcessor,
+      type: typeof this.cvProcessor,
+      constructor: this.cvProcessor ? this.cvProcessor.constructor.name : 'N/A',
+      isReady: this.cvProcessor ? typeof this.cvProcessor.isReady : 'N/A',
+      methods: this.cvProcessor ? Object.getOwnPropertyNames(Object.getPrototypeOf(this.cvProcessor)) : 'N/A'
+    });
+    
     if (!this.cvProcessor.isReady()) {
       logger.info('OpenCV not ready yet, will start CV processing when available');
       

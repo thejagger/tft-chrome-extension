@@ -9,7 +9,7 @@ console.log('[DEBUG] simple-cv-processor.js file loaded');
 
 class SimpleCvProcessor {
   constructor() {
-    this.isReady = true; // Always ready since no external dependencies
+    // Note: No this.isReady property - we use the isReady() method instead
     this.processingQueue = [];
     this.isProcessing = false;
     this.lastProcessTime = 0;
@@ -490,7 +490,7 @@ class SimpleCvProcessor {
    */
   getStats() {
     return {
-      isReady: true,
+      isReady: this.isReady(),
       lastProcessTime: this.lastProcessTime,
       cacheSize: this.detectionCache.size,
       type: 'Simple CV Processor'
