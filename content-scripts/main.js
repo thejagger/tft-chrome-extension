@@ -10,7 +10,20 @@ class TftExtension {
   constructor() {
     this.videoDetector = new VideoDetector();
     this.overlayManager = new OverlayManager();
+    
+    // Debug: Check if SimpleCvProcessor class exists
+    logger.debug('SimpleCvProcessor class available:', typeof SimpleCvProcessor);
+    
     this.cvProcessor = new SimpleCvProcessor(); // Using simple CV to avoid OpenCV CSP issues
+    
+    // Debug: Check cvProcessor object
+    logger.debug('cvProcessor created:', {
+      type: typeof this.cvProcessor,
+      constructor: this.cvProcessor.constructor.name,
+      hasIsReady: typeof this.cvProcessor.isReady,
+      methods: Object.getOwnPropertyNames(Object.getPrototypeOf(this.cvProcessor))
+    });
+    
     this.templateMatcher = new TemplateMatcher(this.cvProcessor);
     this.isActive = false;
     this.cleanupTasks = [];

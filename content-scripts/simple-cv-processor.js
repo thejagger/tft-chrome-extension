@@ -13,6 +13,14 @@ class SimpleCvProcessor {
     this.detectionCache = new Map();
     
     logger.info('Simple CV Processor initialized - no external dependencies');
+    
+    // Debug: Verify methods exist
+    logger.debug('SimpleCvProcessor methods available:', {
+      isReady: typeof this.isReady,
+      processFrame: typeof this.processFrame,
+      getStats: typeof this.getStats,
+      cleanup: typeof this.cleanup
+    });
   }
 
   /**
