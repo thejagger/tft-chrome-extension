@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "TFT Stream Assistant",
+  "version": "1.0.0",
+  "description": "Real-time Teamfight Tactics information overlay for Twitch streams",
+  
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  
+  "host_permissions": [
+    "https://www.twitch.tv/*"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/*"],
+      "js": [
+        "content-scripts/config.js",
+        "content-scripts/logger.js",
+        "content-scripts/video-detector.js",
+        "content-scripts/overlay-manager.js",
+        "content-scripts/main.js"
+      ],
+      "css": ["styles/overlay.css"],
+      "run_at": "document_end"
+    }
+  ],
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*", "styles/*"],
+      "matches": ["https://www.twitch.tv/*"]
+    }
+  ],
+  
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "TFT Stream Assistant"
+  },
+  
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png", 
+    "128": "assets/icon128.png"
+  }
+} 

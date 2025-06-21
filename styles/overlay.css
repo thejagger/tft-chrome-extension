@@ -1,0 +1,157 @@
+/**
+ * TFT Chrome Extension - Overlay Styles
+ * Modern, clean styling for overlay components
+ */
+
+/* Main overlay container */
+.tft-overlay-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Overlay content styling */
+.tft-overlay-content {
+  padding: 12px 16px;
+  color: #ffffff;
+}
+
+.tft-overlay-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #00d4aa; /* Twitch-like green */
+}
+
+.tft-overlay-content p {
+  margin: 0 0 6px 0;
+  font-size: 13px;
+  color: #e0e0e0;
+}
+
+.tft-overlay-content .subtitle {
+  font-size: 11px;
+  color: #b0b0b0;
+  opacity: 0.8;
+}
+
+/* Status indicators */
+.tft-status-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.tft-status-active {
+  background-color: #00ff00;
+  box-shadow: 0 0 4px rgba(0, 255, 0, 0.5);
+}
+
+.tft-status-inactive {
+  background-color: #ff6b6b;
+  box-shadow: 0 0 4px rgba(255, 107, 107, 0.5);
+}
+
+.tft-status-processing {
+  background-color: #ffa500;
+  box-shadow: 0 0 4px rgba(255, 165, 0, 0.5);
+  animation: pulse 2s infinite;
+}
+
+/* Pulse animation for processing status */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Hover effects for interactive elements */
+.tft-overlay-interactive {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tft-overlay-interactive:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Loading animation */
+.tft-loading {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #00d4aa;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .tft-overlay-container {
+    max-width: 280px;
+    font-size: 12px;
+  }
+  
+  .tft-overlay-content {
+    padding: 10px 12px;
+  }
+  
+  .tft-overlay-content h3 {
+    font-size: 14px;
+  }
+}
+
+/* Hide overlay on very small screens */
+@media (max-width: 480px) {
+  .tft-overlay-container {
+    display: none !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .tft-overlay-container {
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 2px solid #ffffff;
+  }
+  
+  .tft-overlay-content {
+    color: #ffffff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .tft-overlay-container {
+    transition: none;
+  }
+  
+  .tft-loading {
+    animation: none;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+  }
+} 

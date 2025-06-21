@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TFT Stream Assistant</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="popup-container">
+      <!-- Header -->
+      <header class="popup-header">
+        <h1>TFT Stream Assistant</h1>
+        <div class="version">v1.0.0</div>
+      </header>
+
+      <!-- Status Section -->
+      <section class="status-section">
+        <h2>Status</h2>
+        <div class="status-item">
+          <span class="status-label">Extension:</span>
+          <span class="status-indicator" id="extension-status">
+            <span class="status-dot"></span>
+            <span class="status-text">Checking...</span>
+          </span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Video Detected:</span>
+          <span class="status-indicator" id="video-status">
+            <span class="status-dot"></span>
+            <span class="status-text">Checking...</span>
+          </span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">TFT Stream:</span>
+          <span class="status-indicator" id="tft-status">
+            <span class="status-dot"></span>
+            <span class="status-text">Checking...</span>
+          </span>
+        </div>
+      </section>
+
+      <!-- Controls Section -->
+      <section class="controls-section">
+        <h2>Controls</h2>
+        <button id="test-overlay" class="control-button">Test Overlay</button>
+        <button id="refresh-detection" class="control-button">
+          Refresh Detection
+        </button>
+      </section>
+
+      <!-- Information Section -->
+      <section class="info-section">
+        <h2>Information</h2>
+        <div class="info-item">
+          <span class="info-label">Video Resolution:</span>
+          <span class="info-value" id="video-resolution">-</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Page URL:</span>
+          <span class="info-value" id="page-url">-</span>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="popup-footer">
+        <div class="links">
+          <a href="#" id="report-issue">Report Issue</a>
+          <a href="#" id="view-logs">View Logs</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

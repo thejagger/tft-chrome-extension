@@ -1,6 +1,6 @@
 ---
-description:
-globs:
+description: 
+globs: 
 alwaysApply: true
 ---
 
@@ -254,3 +254,53 @@ Always consider performance implications when working with:
 - Computer vision algorithms
 - Real-time DOM manipulation
 - Memory usage for image data
+
+## GitHub Workflow & Issue Tracking
+
+### Repository Information
+- **GitHub Repository**: https://github.com/thejagger/tft-chrome-extension
+- **GitHub CLI**: Available and authenticated as `thejagger`
+- **Issue Tracking**: All development tasks are tracked via GitHub Issues
+
+### Current Active Issues
+- **Issue #1**: Phase 1: Chrome Extension Foundation Setup
+- **Issue #3**: Phase 2: Computer Vision Integration
+
+### GitHub CLI Commands
+When working on this project, use these commands to manage issues:
+
+```bash
+# List all issues
+gh issue list
+
+# View specific issue
+gh issue view 1
+
+# Create new issue
+gh issue create --title "Feature Name" --body "Description" --label "enhancement"
+
+# Close issue
+gh issue close 1 --comment "Completed in commit abc123"
+
+# Comment on issue
+gh issue comment 1 --body "Progress update"
+```
+
+### Development Workflow Rules
+1. **Always check active issues** before starting new work
+2. **Reference issue numbers** in commit messages (e.g., "Fix overlay positioning - resolves #1")
+3. **Update issue progress** when completing tasks
+4. **Create new issues** for bugs or feature requests discovered during development
+5. **Close issues** when features are fully implemented and tested
+
+### Issue Management Guidelines
+- **One issue per major feature** or phase
+- **Break down large tasks** into smaller, manageable issues
+- **Use labels** to categorize issues (enhancement, bug, documentation, etc.)
+- **Link commits** to issues using GitHub's auto-linking (e.g., "closes #1", "fixes #3")
+- **Comment on progress** regularly to maintain project visibility
+
+### Priority Levels
+- **High**: Core functionality (Chrome extension setup, video processing)
+- **Medium**: Feature enhancements (UI improvements, additional data sources)
+- **Low**: Nice-to-have features (advanced analytics, customization options)

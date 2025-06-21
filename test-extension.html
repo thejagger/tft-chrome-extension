@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TFT Extension Test</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #f5f5f5;
+      }
+      .test-container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      .test-video {
+        width: 100%;
+        max-width: 640px;
+        height: 360px;
+        background: #000;
+        border-radius: 4px;
+        position: relative;
+      }
+      .status {
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+      .status.success {
+        background: #d4edda;
+        color: #155724;
+      }
+      .status.warning {
+        background: #fff3cd;
+        color: #856404;
+      }
+      .status.error {
+        background: #f8d7da;
+        color: #721c24;
+      }
+      button {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 5px;
+      }
+      button:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="test-container">
+      <h1>TFT Chrome Extension Test</h1>
+      <p>This page simulates a Twitch stream for testing the extension.</p>
+
+      <div class="test-video" id="videoContainer">
+        <video id="testVideo" controls style="width: 100%; height: 100%">
+          <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="controls">
+        <button onclick="testExtension()">Test Extension</button>
+        <button onclick="simulateTftStream()">Simulate TFT Stream</button>
+        <button onclick="clearTest()">Clear Test</button>
+      </div>
+
+      <div id="status" class="status"></div>
+
+      <div class="test-container">
+        <h2>Extension Status</h2>
+        <div id="extensionInfo">
+          <p>
+            <strong>Extension Loaded:</strong>
+            <span id="extensionLoaded">Checking...</span>
+          </p>
+          <p>
+            <strong>Video Detected:</strong>
+            <span id="videoDetected">Checking...</span>
+          </p>
+          <p>
+            <strong>Overlay Available:</strong>
+            <span id="overlayAvailable">Checking...</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Simulate Twitch page attributes
+      document.body.setAttribute("data-page", "twitch-stream");
+
+      // Add TFT stream title for testing
+      const titleElement = document.createElement("div");
+      titleElement.setAttribute("data-a-target", "stream-title");
+      titleElement.textContent = "Teamfight Tactics Climbing to Challenger";
+      titleElement.style.display = "none";
+      document.body.appendChild(titleElement);
+
+      // Add video player attributes
+      const video = document.getElementById("testVideo");
+      video.setAttribute("data-a-target", "video-player");
+
+      function testExtension() {
+        updateStatus("Testing extension functionality...", "warning");
+
+        // Check if extension is loaded
+        if (window.tftExtension) {
+          const status = window.tftExtension.getStatus();
+          updateStatus("Extension loaded successfully!", "success");
+
+          document.getElementById("extensionLoaded").textContent = "Yes";
+          document.getElementById("videoDetected").textContent = status.hasVideo
+            ? "Yes"
+            : "No";
+          document.getElementById("overlayAvailable").textContent =
+            status.isActive ? "Yes" : "No";
+        } else {
+          updateStatus(
+            "Extension not loaded. Please install and reload the page.",
+            "error"
+          );
+          document.getElementById("extensionLoaded").textContent = "No";
+        }
+      }
+
+      function simulateTftStream() {
+        updateStatus("Simulating TFT stream detection...", "warning");
+        titleElement.style.display = "block";
+
+        if (window.tftExtension) {
+          // Trigger overlay test
+          const overlay = window.tftExtension.overlayManager;
+          if (overlay) {
+            overlay.showTestOverlay();
+            updateStatus(
+              "TFT stream simulation active - overlay should appear!",
+              "success"
+            );
+          }
+        }
+      }
+
+      function clearTest() {
+        updateStatus("Test cleared.", "success");
+        titleElement.style.display = "none";
+        document.getElementById("extensionLoaded").textContent = "Checking...";
+        document.getElementById("videoDetected").textContent = "Checking...";
+        document.getElementById("overlayAvailable").textContent = "Checking...";
+      }
+
+      function updateStatus(message, type) {
+        const statusDiv = document.getElementById("status");
+        statusDiv.textContent = message;
+        statusDiv.className = `status ${type}`;
+      }
+
+      // Auto-test on page load
+      setTimeout(testExtension, 1000);
+    </script>
+  </body>
+</html>
