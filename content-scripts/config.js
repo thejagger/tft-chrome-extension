@@ -56,9 +56,6 @@ const CONFIG = {
   // Computer Vision Settings
   CV: {
     PROCESSING_INTERVAL: 2000, // Process frames every 2 seconds
-    MATCHING_THRESHOLD: 0.75, // Template matching confidence threshold
-    SCALE_FACTORS: [0.8, 1.0, 1.2], // Multi-scale template matching
-    NMS_OVERLAP_THRESHOLD: 0.3, // Non-maximum suppression overlap threshold
     MAX_PROCESSING_TIME: 100, // Maximum time per frame (ms)
     ENABLE_VISUALIZATION: false, // Show detection boxes (for debugging)
   },

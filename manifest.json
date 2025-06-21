@@ -21,7 +21,6 @@
         "content-scripts/logger.js",
         "content-scripts/video-detector.js",
         "content-scripts/simple-cv-processor.js",
-        "content-scripts/template-matcher.js",
         "content-scripts/overlay-manager.js",
         "content-scripts/main.js"
       ],

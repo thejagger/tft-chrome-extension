@@ -11,7 +11,6 @@ class TftExtension {
     this.videoDetector = new VideoDetector();
     this.overlayManager = new OverlayManager();
     this.cvProcessor = new SimpleCvProcessor();
-    this.templateMatcher = new TemplateMatcher(this.cvProcessor);
     this.isActive = false;
     this.cleanupTasks = [];
     this.cvProcessingInterval = null;
