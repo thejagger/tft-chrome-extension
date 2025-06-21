@@ -113,21 +113,37 @@ class VideoDetector {
    */
   isTftStream() {
     try {
-      // Check stream title
+      logger.debug('Starting TFT stream detection...');
+      
+      // Method 1: Check game category (most reliable)
+      const gameLink = document.querySelector('[data-a-target="stream-game-link"]');
+      const gameText = gameLink?.textContent?.toLowerCase() || '';
+      const gameHref = gameLink?.href?.toLowerCase() || '';
+      
+      const isTftByCategory = CONFIG.TWITCH.TFT_KEYWORDS.some(keyword => 
+        gameText.includes(keyword) || gameHref.includes(keyword.replace(/\s+/g, '-'))
+      );
+      
+      // Method 2: Check stream title (fallback)
       const titleElement = document.querySelector(CONFIG.TWITCH.STREAM_TITLE_SELECTOR);
       const title = titleElement?.textContent?.toLowerCase() || '';
       
-      // Check if title contains TFT keywords
-      const hasTftKeywords = CONFIG.TWITCH.TFT_KEYWORDS.some(keyword => 
+      const isTftByTitle = CONFIG.TWITCH.TFT_KEYWORDS.some(keyword => 
         title.includes(keyword)
       );
 
-      logger.debug('Checking if TFT stream', {
+      const isTft = isTftByCategory || isTftByTitle;
+
+      logger.info('TFT detection results', {
+        gameText: gameText,
+        gameHref: gameHref,
         title: title,
-        hasTftKeywords: hasTftKeywords
+        isTftByCategory: isTftByCategory,
+        isTftByTitle: isTftByTitle,
+        finalResult: isTft
       });
 
-      return hasTftKeywords;
+      return isTft;
     } catch (error) {
       logger.error('Error checking TFT stream status', error);
       return false;
