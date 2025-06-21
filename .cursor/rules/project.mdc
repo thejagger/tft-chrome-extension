@@ -1,0 +1,256 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+# TFT Chrome Extension - Cursor Rules
+
+## Code Quality Standards
+
+### File & Function Size Limits
+
+- Maximum 50 lines per function
+- Maximum 300 lines per file
+- Maximum 200 lines per class
+- Single responsibility principle for all functions and classes
+
+### File Organization
+
+- Create small, focused files instead of large monolithic files
+- Each file should have a single, clear responsibility
+- Use descriptive file names that indicate their purpose
+- Organize files by functionality, not by file type
+
+Example structure:
+
+```
+├── content-scripts/
+│   ├── overlay-manager.js      // ~150 lines - handles overlay UI
+│   ├── hover-detector.js       // ~100 lines - detects mouse events
+│   ├── element-recognizer.js   // ~200 lines - CV recognition logic
+│   └── tooltip-renderer.js     // ~120 lines - renders information cards
+```
+
+### Function Structure
+
+- Keep functions small and focused (max 50 lines)
+- Use descriptive function names that explain what they do
+- Add JSDoc comments for complex functions
+- Return early to avoid deep nesting
+
+```javascript
+// ✅ Good Example
+/**
+ * Extracts a single frame from the video element
+ * Used for computer vision processing
+ */
+function extractVideoFrame(videoElement) {
+  const canvas = document.createElement("canvas");
+  const ctx = canvas.getContext("2d");
+
+  // Set canvas dimensions to match video
+  canvas.width = videoElement.videoWidth;
+  canvas.height = videoElement.videoHeight;
+
+  // Draw current video frame to canvas
+  ctx.drawImage(videoElement, 0, 0);
+
+  return canvas;
+}
+```
+
+### Variable Naming
+
+- Use clear, descriptive names
+- Avoid abbreviations and single-letter variables (except for loops)
+- Use camelCase for variables and functions
+- Use UPPER_CASE for constants
+
+```javascript
+// ✅ Good
+const augmentTemplates = loadAugmentImages();
+const mouseHoverCoordinates = { x: 150, y: 200 };
+const RECOGNITION_CONFIDENCE_THRESHOLD = 0.85;
+
+// ❌ Bad
+const at = loadAugmentImages();
+const mhc = { x: 150, y: 200 };
+const rct = 0.85;
+```
+
+### Comment Guidelines
+
+ALWAYS add comments for:
+
+- Complex algorithms (computer vision, template matching)
+- Important business logic (confidence thresholds, performance decisions)
+- Non-obvious browser APIs (video processing, frame extraction)
+- Magic numbers and configuration values
+- Performance-critical sections
+
+NEVER comment:
+
+- Obvious code that's self-explanatory
+- Variable assignments that are clear from context
+
+```javascript
+// ✅ Good Comments
+// Check if confidence is above threshold (85%)
+// Lower values cause too many false positives
+if (matchConfidence > 0.85) {
+  return detectedElement;
+}
+
+// Use requestAnimationFrame for smooth 60fps processing
+// Prevents blocking the main thread during video analysis
+requestAnimationFrame(() => processNextFrame());
+
+// ❌ Bad Comments
+const isVisible = true; // Sets isVisible to true
+```
+
+### Error Handling
+
+- Always include error context for debugging
+- Use try-catch blocks for operations that can fail
+- Return safe fallback values when possible
+- Log errors with relevant context
+
+```javascript
+try {
+  const frameData = extractVideoFrame(video);
+  return processFrame(frameData);
+} catch (error) {
+  // Log specific context for debugging
+  console.error("Failed to extract video frame:", {
+    videoElement: video,
+    error: error.message,
+    timestamp: Date.now(),
+  });
+
+  // Return safe fallback
+  return null;
+}
+```
+
+### Module Structure
+
+- Export clear, focused APIs
+- Use ES6 modules (import/export)
+- Group related functions into classes or objects
+- Keep public APIs simple and well-documented
+
+```javascript
+// ✅ Good Module Structure
+export class AugmentDetector {
+  constructor(templates) {
+    this.templates = templates;
+    this.confidenceThreshold = 0.85;
+  }
+
+  // Small, focused methods (max 20 lines each)
+  detect(frame) {
+    /* implementation */
+  }
+  validateMatch(match) {
+    /* implementation */
+  }
+  filterResults(matches) {
+    /* implementation */
+  }
+}
+
+// ✅ Good Public API
+export const TooltipManager = {
+  show: showTooltip,
+  hide: hideTooltip,
+  position: positionTooltip,
+  update: updateContent,
+};
+```
+
+### Configuration Management
+
+- Centralize all configuration in a single config file
+- Use descriptive names for configuration values
+- Add comments explaining what each config does
+- Group related configurations together
+
+```javascript
+export const CONFIG = {
+  // Computer Vision Settings
+  RECOGNITION: {
+    CONFIDENCE_THRESHOLD: 0.85, // Minimum match confidence
+    FRAME_SAMPLE_RATE: 5, // Process every 5th frame
+    MAX_PROCESSING_TIME: 16, // 60fps = 16ms per frame
+  },
+
+  // UI Settings
+  OVERLAY: {
+    FADE_DURATION: 200, // Tooltip fade animation
+    MAX_TOOLTIP_WIDTH: 350, // Maximum tooltip width in pixels
+    HOVER_DELAY: 500, // Delay before showing tooltip
+  },
+
+  // Performance Settings
+  PERFORMANCE: {
+    MAX_CONCURRENT_PROCESSING: 2, // Limit parallel processing
+    CACHE_SIZE: 100, // Number of items to cache
+    CLEANUP_INTERVAL: 30000, // Cleanup every 30 seconds
+  },
+};
+```
+
+### Chrome Extension Specific Rules
+
+- Use manifest v3 format
+- Minimize permissions requested
+- Handle content script injection gracefully
+- Use message passing for background/content communication
+- Always check if DOM elements exist before using them
+
+### Performance Guidelines
+
+- Debounce expensive operations (image processing, API calls)
+- Use Web Workers for heavy computation
+- Cache frequently accessed data
+- Profile regularly using Chrome DevTools
+- Set performance budgets (max CPU usage, memory limits)
+- Use requestAnimationFrame for smooth animations
+
+### Testing Requirements
+
+- Write small, focused tests for each function
+- Test error conditions and edge cases
+- Mock external dependencies (APIs, DOM elements)
+- Keep test files under 200 lines
+
+### Code Review Checklist
+
+Before submitting code, ensure:
+
+- [ ] All functions are under 50 lines
+- [ ] All files are under 300 lines
+- [ ] Complex logic has comments
+- [ ] Error handling is in place
+- [ ] Variable names are descriptive
+- [ ] No magic numbers (use constants)
+- [ ] Performance considerations addressed
+
+## Project-Specific Context
+
+This is a Chrome extension for Teamfight Tactics (TFT) that:
+
+- Analyzes Twitch video streams in real-time
+- Detects TFT game elements using computer vision
+- Provides hover-based information overlays
+- Uses OpenCV.js for image processing
+- Integrates with TFT APIs for game data
+
+Always consider performance implications when working with:
+
+- Video frame processing
+- Computer vision algorithms
+- Real-time DOM manipulation
+- Memory usage for image data
