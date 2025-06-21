@@ -1,0 +1,507 @@
+{
+  "TFT14_Bruiser": {
+    "name": "Bruiser",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Bruisers gain 15% max Health",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Bruisers gain 35% max Health",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Bruisers gain 55% max Health",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Controller": {
+    "name": "Controller",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Controllers gain 15 Ability Power and 15 Mana",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Controllers gain 30 Ability Power and 30 Mana",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Controllers gain 50 Ability Power and 50 Mana",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Immortal": {
+    "name": "Immortal",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Immortals gain 15% Damage Reduction",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Immortals gain 30% Damage Reduction",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Immortals gain 45% Damage Reduction",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Marksman": {
+    "name": "Marksman",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Marksmen gain 10% Attack Speed and 5% Damage Amp",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Marksmen gain 25% Attack Speed and 15% Damage Amp",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Marksmen gain 45% Attack Speed and 30% Damage Amp",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Swift": {
+    "name": "Swift",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Swift units gain 15% Attack Speed",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Swift units gain 30% Attack Speed",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Swift units gain 50% Attack Speed",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Vanguard": {
+    "name": "Vanguard",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Vanguards gain 20 Armor and Magic Resist",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Vanguards gain 45 Armor and Magic Resist",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Vanguards gain 80 Armor and Magic Resist",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_AnimaSquad": {
+    "name": "Anima Squad",
+    "levels": {
+      "3": {
+        "level": 3,
+        "description": "Anima Squad units gain 200 Health and 20% Attack Speed",
+        "tierName": "Bronze"
+      },
+      "5": {
+        "level": 5,
+        "description": "Anima Squad units gain 350 Health and 35% Attack Speed",
+        "tierName": "Silver"
+      },
+      "7": {
+        "level": 7,
+        "description": "Anima Squad units gain 500 Health and 55% Attack Speed",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_BallisTek": {
+    "name": "BallisTek",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "BallisTek units gain 15% Damage Amp",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "BallisTek units gain 30% Damage Amp",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "BallisTek units gain 50% Damage Amp",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Divinicorp": {
+    "name": "Divinicorp",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Divinicorp units gain 15% Damage Amp",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Divinicorp units gain 30% Damage Amp",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Divinicorp units gain 50% Damage Amp",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_EdgeRunner": {
+    "name": "Edge Runner",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Edge Runners gain 15% Attack Speed and Move Speed",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Edge Runners gain 30% Attack Speed and Move Speed",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Edge Runners gain 50% Attack Speed and Move Speed",
+        "tierName": "Gold"
+      },
+      "8": {
+        "level": 8,
+        "description": "Edge Runners gain 75% Attack Speed and Move Speed",
+        "tierName": "Prismatic"
+      }
+    }
+  },
+  "TFT14_Supercharge": {
+    "name": "A.M.P.",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "A.M.P. units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "A.M.P. units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "A.M.P. units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Armorclad": {
+    "name": "Bastion",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Bastion units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Bastion units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Bastion units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Cyberboss": {
+    "name": "Cyberboss",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Cyberboss units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Cyberboss units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Cyberboss units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Suits": {
+    "name": "Cypher",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Cypher units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Cypher units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Cypher units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Thirsty": {
+    "name": "Dynamo",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Dynamo units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Dynamo units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Dynamo units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Cutter": {
+    "name": "Executioner",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Executioner units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Executioner units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Executioner units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Netgod": {
+    "name": "God of the Net",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "God of the Net units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "God of the Net units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "God of the Net units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_HotRod": {
+    "name": "Nitro",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Nitro units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Nitro units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Nitro units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Overlord": {
+    "name": "Overlord",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Overlord units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Overlord units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Overlord units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Strong": {
+    "name": "Slayer",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Slayer units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Slayer units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Slayer units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_ViegoUniqueTrait": {
+    "name": "Soul Killer",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Soul Killer units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Soul Killer units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Soul Killer units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_StreetDemon": {
+    "name": "Street Demon",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Street Demon units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Street Demon units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Street Demon units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Mob": {
+    "name": "Syndicate",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Syndicate units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Syndicate units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Syndicate units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Techie": {
+    "name": "Techie",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Techie units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Techie units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Techie units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Virus": {
+    "name": "Virus",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Virus units gain bonuses (Bronze level)",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Virus units gain enhanced bonuses (Silver level)",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Virus units gain maximum bonuses (Gold level)",
+        "tierName": "Gold"
+      }
+    }
+  }
+}

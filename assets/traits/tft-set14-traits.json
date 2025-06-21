@@ -1,0 +1,518 @@
+{
+  "version": "15.12.1",
+  "dataSource": "riot-api",
+  "setNumber": 14,
+  "setName": "Cyber City",
+  "totalTraits": 25,
+  "enhancedTraits": 10,
+  "lastUpdated": "2025-06-21T13:46:36.311Z",
+  "typeBreakdown": {
+    "class": 6,
+    "origin": 4,
+    "unknown": 15
+  },
+  "traits": [
+    {
+      "key": "TFT14_Bruiser",
+      "name": "Bruiser",
+      "displayName": "Bruiser",
+      "image": "Trait_Icon_14_Bruiser.TFT_Set14.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Bruisers gain 15% max Health",
+        "4": "Bruisers gain 35% max Health",
+        "6": "Bruisers gain 55% max Health"
+      },
+      "source": "riot-api",
+      "searchText": "bruiser bruisers gain 15% max health bruisers gain 35% max health bruisers gain 55% max health",
+      "isEnhanced": true
+    },
+    {
+      "key": "TFT14_Controller",
+      "name": "Controller",
+      "displayName": "Controller",
+      "image": "Trait_Icon_9_Strategist.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Controllers gain 15 Ability Power and 15 Mana",
+        "4": "Controllers gain 30 Ability Power and 30 Mana",
+        "6": "Controllers gain 50 Ability Power and 50 Mana"
+      },
+      "source": "riot-api",
+      "searchText": "controller controllers gain 15 ability power and 15 mana controllers gain 30 ability power and 30 mana controllers gain 50 ability power and 50 mana",
+      "isEnhanced": true
+    },
+    {
+      "key": "TFT14_Immortal",
+      "name": "Immortal",
+      "displayName": "Immortal",
+      "image": "Trait_Icon_14_GoldenOx.TFT_Set14.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Immortals gain 15% Damage Reduction",
+        "4": "Immortals gain 30% Damage Reduction",
+        "6": "Immortals gain 45% Damage Reduction"
+      },
+      "source": "riot-api",
+      "searchText": "immortal immortals gain 15% damage reduction immortals gain 30% damage reduction immortals gain 45% damage reduction",
+      "isEnhanced": true
+    },
+    {
+      "key": "TFT14_Marksman",
+      "name": "Marksman",
+      "displayName": "Marksman",
+      "image": "Trait_Icon_14_Marksman.TFT_Set14.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Marksmen gain 10% Attack Speed and 5% Damage Amp",
+        "4": "Marksmen gain 25% Attack Speed and 15% Damage Amp",
+        "6": "Marksmen gain 45% Attack Speed and 30% Damage Amp"
+      },
+      "source": "riot-api",
+      "searchText": "marksman marksmen gain 10% attack speed and 5% damage amp marksmen gain 25% attack speed and 15% damage amp marksmen gain 45% attack speed and 30% damage amp",
+      "isEnhanced": true
+    },
+    {
+      "key": "TFT14_Swift",
+      "name": "Swift",
+      "displayName": "Swift",
+      "image": "Trait_Icon_10_Rapidfire.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Swift units gain 15% Attack Speed",
+        "4": "Swift units gain 30% Attack Speed",
+        "6": "Swift units gain 50% Attack Speed"
+      },
+      "source": "riot-api",
+      "searchText": "swift swift units gain 15% attack speed swift units gain 30% attack speed swift units gain 50% attack speed",
+      "isEnhanced": true
+    },
+    {
+      "key": "TFT14_Vanguard",
+      "name": "Vanguard",
+      "displayName": "Vanguard",
+      "image": "Trait_Icon_12_Vanguard.TFT_Set12.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Vanguards gain 20 Armor and Magic Resist",
+        "4": "Vanguards gain 45 Armor and Magic Resist",
+        "6": "Vanguards gain 80 Armor and Magic Resist"
+      },
+      "source": "riot-api",
+      "searchText": "vanguard vanguards gain 20 armor and magic resist vanguards gain 45 armor and magic resist vanguards gain 80 armor and magic resist",
+      "isEnhanced": true
+    },
+    {
+      "key": "TFT14_AnimaSquad",
+      "name": "Anima Squad",
+      "displayName": "Anima Squad",
+      "image": "Trait_Icon_14_AnimaSquad.TFT_Set14.png",
+      "type": "origin",
+      "activationLevels": [
+        3,
+        5,
+        7
+      ],
+      "descriptions": {
+        "3": "Anima Squad units gain 200 Health and 20% Attack Speed",
+        "5": "Anima Squad units gain 350 Health and 35% Attack Speed",
+        "7": "Anima Squad units gain 500 Health and 55% Attack Speed"
+      },
+      "source": "riot-api",
+      "searchText": "anima squad anima squad units gain 200 health and 20% attack speed anima squad units gain 350 health and 35% attack speed anima squad units gain 500 health and 55% attack speed",
+      "isEnhanced": true
+    },
+    {
+      "key": "TFT14_BallisTek",
+      "name": "BallisTek",
+      "displayName": "BallisTek",
+      "image": "Trait_Icon_14_BoomBots.TFT_Set14.png",
+      "type": "origin",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "BallisTek units gain 15% Damage Amp",
+        "4": "BallisTek units gain 30% Damage Amp",
+        "6": "BallisTek units gain 50% Damage Amp"
+      },
+      "source": "riot-api",
+      "searchText": "ballistek ballistek units gain 15% damage amp ballistek units gain 30% damage amp ballistek units gain 50% damage amp",
+      "isEnhanced": true
+    },
+    {
+      "key": "TFT14_Divinicorp",
+      "name": "Divinicorp",
+      "displayName": "Divinicorp",
+      "image": "Trait_Icon_14_Divinicorp.TFT_Set14.png",
+      "type": "origin",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Divinicorp units gain 15% Damage Amp",
+        "4": "Divinicorp units gain 30% Damage Amp",
+        "6": "Divinicorp units gain 50% Damage Amp"
+      },
+      "source": "riot-api",
+      "searchText": "divinicorp divinicorp units gain 15% damage amp divinicorp units gain 30% damage amp divinicorp units gain 50% damage amp",
+      "isEnhanced": true
+    },
+    {
+      "key": "TFT14_EdgeRunner",
+      "name": "Edge Runner",
+      "displayName": "Edge Runner",
+      "image": "Trait_Icon_14_Exotech.TFT_Set14.png",
+      "type": "origin",
+      "activationLevels": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "descriptions": {
+        "2": "Edge Runners gain 15% Attack Speed and Move Speed",
+        "4": "Edge Runners gain 30% Attack Speed and Move Speed",
+        "6": "Edge Runners gain 50% Attack Speed and Move Speed",
+        "8": "Edge Runners gain 75% Attack Speed and Move Speed"
+      },
+      "source": "riot-api",
+      "searchText": "edge runner edge runners gain 15% attack speed and move speed edge runners gain 30% attack speed and move speed edge runners gain 50% attack speed and move speed edge runners gain 75% attack speed and move speed",
+      "isEnhanced": true
+    },
+    {
+      "key": "TFT14_Supercharge",
+      "name": "A.M.P.",
+      "displayName": "A.M.P.",
+      "image": "Trait_Icon_14_Amp.TFT_Set14.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "A.M.P. units gain bonuses (Bronze level)",
+        "4": "A.M.P. units gain enhanced bonuses (Silver level)",
+        "6": "A.M.P. units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "a.m.p. ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_Armorclad",
+      "name": "Bastion",
+      "displayName": "Bastion",
+      "image": "Trait_Icon_9_Bastion.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Bastion units gain bonuses (Bronze level)",
+        "4": "Bastion units gain enhanced bonuses (Silver level)",
+        "6": "Bastion units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "bastion ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_Cyberboss",
+      "name": "Cyberboss",
+      "displayName": "Cyberboss",
+      "image": "Trait_Icon_14_Cyberbosses.TFT_Set14.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Cyberboss units gain bonuses (Bronze level)",
+        "4": "Cyberboss units gain enhanced bonuses (Silver level)",
+        "6": "Cyberboss units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "cyberboss ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_Suits",
+      "name": "Cypher",
+      "displayName": "Cypher",
+      "image": "Trait_Icon_14_Cypher.TFT_Set14.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Cypher units gain bonuses (Bronze level)",
+        "4": "Cypher units gain enhanced bonuses (Silver level)",
+        "6": "Cypher units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "cypher ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_Thirsty",
+      "name": "Dynamo",
+      "displayName": "Dynamo",
+      "image": "Trait_Icon_14_Dynamo.TFT_Set14.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Dynamo units gain bonuses (Bronze level)",
+        "4": "Dynamo units gain enhanced bonuses (Silver level)",
+        "6": "Dynamo units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "dynamo ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_Cutter",
+      "name": "Executioner",
+      "displayName": "Executioner",
+      "image": "Trait_Icon_4_Executioner.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Executioner units gain bonuses (Bronze level)",
+        "4": "Executioner units gain enhanced bonuses (Silver level)",
+        "6": "Executioner units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "executioner ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_Netgod",
+      "name": "God of the Net",
+      "displayName": "God of the Net",
+      "image": "Trait_Icon_14_GodoftheNet.TFT_Set14.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "God of the Net units gain bonuses (Bronze level)",
+        "4": "God of the Net units gain enhanced bonuses (Silver level)",
+        "6": "God of the Net units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "god of the net ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_HotRod",
+      "name": "Nitro",
+      "displayName": "Nitro",
+      "image": "Trait_Icon_14_NitroForge.TFT_Set14.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Nitro units gain bonuses (Bronze level)",
+        "4": "Nitro units gain enhanced bonuses (Silver level)",
+        "6": "Nitro units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "nitro ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_Overlord",
+      "name": "Overlord",
+      "displayName": "Overlord",
+      "image": "Trait_Icon_14_Overlord.TFT_Set14.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Overlord units gain bonuses (Bronze level)",
+        "4": "Overlord units gain enhanced bonuses (Silver level)",
+        "6": "Overlord units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "overlord ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_Strong",
+      "name": "Slayer",
+      "displayName": "Slayer",
+      "image": "Trait_Icon_4_Slayer.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Slayer units gain bonuses (Bronze level)",
+        "4": "Slayer units gain enhanced bonuses (Silver level)",
+        "6": "Slayer units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "slayer ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_ViegoUniqueTrait",
+      "name": "Soul Killer",
+      "displayName": "Soul Killer",
+      "image": "Trait_Icon_14_SoulKiller.TFT_Set14.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Soul Killer units gain bonuses (Bronze level)",
+        "4": "Soul Killer units gain enhanced bonuses (Silver level)",
+        "6": "Soul Killer units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "soul killer ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_StreetDemon",
+      "name": "Street Demon",
+      "displayName": "Street Demon",
+      "image": "Trait_Icon_14_StreetDemon.TFT_Set14.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Street Demon units gain bonuses (Bronze level)",
+        "4": "Street Demon units gain enhanced bonuses (Silver level)",
+        "6": "Street Demon units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "street demon ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_Mob",
+      "name": "Syndicate",
+      "displayName": "Syndicate",
+      "image": "Trait_Icon_14_Mob.TFT_Set14.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Syndicate units gain bonuses (Bronze level)",
+        "4": "Syndicate units gain enhanced bonuses (Silver level)",
+        "6": "Syndicate units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "syndicate ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_Techie",
+      "name": "Techie",
+      "displayName": "Techie",
+      "image": "Trait_Icon_14_Techie.TFT_Set14.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Techie units gain bonuses (Bronze level)",
+        "4": "Techie units gain enhanced bonuses (Silver level)",
+        "6": "Techie units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "techie ",
+      "isEnhanced": false
+    },
+    {
+      "key": "TFT14_Virus",
+      "name": "Virus",
+      "displayName": "Virus",
+      "image": "Trait_Icon_14_Virus.TFT_Set14.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Virus units gain bonuses (Bronze level)",
+        "4": "Virus units gain enhanced bonuses (Silver level)",
+        "6": "Virus units gain maximum bonuses (Gold level)"
+      },
+      "source": "riot-api",
+      "searchText": "virus ",
+      "isEnhanced": false
+    }
+  ]
+}

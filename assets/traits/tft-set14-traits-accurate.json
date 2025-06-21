@@ -1,0 +1,1606 @@
+{
+  "version": "15.12.1",
+  "dataSource": "community-dragon",
+  "sourceUrl": "https://raw.communitydragon.org/15.9/cdragon/tft/en_us.json",
+  "setNumber": 14,
+  "setName": "Cyber City",
+  "totalTraits": 25,
+  "verifiedTraits": 25,
+  "lastUpdated": "2025-06-21T14:12:52.935Z",
+  "typeBreakdown": {
+    "class": 8,
+    "origin": 6,
+    "special": 6,
+    "unique": 4,
+    "unknown": 1
+  },
+  "activationPatterns": {
+    "1": 4,
+    "2,4,6": 7,
+    "2,4": 1,
+    "2,3,4,5": 3,
+    "3,5,7,10": 3,
+    "1,2,3,4,5,6,7": 1,
+    "3,5,7": 1,
+    "2,3,4": 2,
+    "3,4,5": 1,
+    "3,4": 1,
+    "2,4,6,8": 1
+  },
+  "traits": [
+    {
+      "key": "TFT14_Armorclad",
+      "name": "Bastion",
+      "displayName": "Bastion",
+      "image": "Trait_Icon_9_Bastion.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Bastion Bronze effect: Your team gains {TeamwideArmor} Armor and Magic Resist. Bastions gain more.For the first {Duration} seconds of combat, Bastions increase their bonus by {StatMultiplier}%.({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% Non-Bastions gain an additional {EnhancedTeamwideArmor} %i:scaleArmor%%i:scaleMR%.",
+        "4": "Bastion Silver effect: Your team gains {TeamwideArmor} Armor and Magic Resist. Bastions gain more.For the first {Duration} seconds of combat, Bastions increase their bonus by {StatMultiplier}%.({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% Non-Bastions gain an additional {EnhancedTeamwideArmor} %i:scaleArmor%%i:scaleMR%.",
+        "6": "Bastion Gold effect: Your team gains {TeamwideArmor} Armor and Magic Resist. Bastions gain more.For the first {Duration} seconds of combat, Bastions increase their bonus by {StatMultiplier}%.({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% Non-Bastions gain an additional {EnhancedTeamwideArmor} %i:scaleArmor%%i:scaleMR%."
+      },
+      "rawDescription": "Your team gains {TeamwideArmor} Armor and Magic Resist. Bastions gain more.For the first {Duration} seconds of combat, Bastions increase their bonus by {StatMultiplier}%.({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% Non-Bastions gain an additional {EnhancedTeamwideArmor} %i:scaleArmor%%i:scaleMR%.",
+      "source": "community-dragon",
+      "searchText": "bastion your team gains {teamwidearmor} armor and magic resist. bastions gain more.for the first {duration} seconds of combat, bastions increase their bonus by {statmultiplier}%.({minunits}) {bonusarmor} %i:scalearmor%%i:scalemr% ({minunits}) {bonusarmor} %i:scalearmor%%i:scalemr% ({minunits}) {bonusarmor} %i:scalearmor%%i:scalemr% non-bastions gain an additional {enhancedteamwidearmor} %i:scalearmor%%i:scalemr%.",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 3,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "BonusArmor": 18,
+            "BonusMR": 18,
+            "Duration": 10,
+            "EnhancedTeamwideArmor": 30,
+            "StatMultiplier": 1,
+            "TeamwideArmor": 10,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 5,
+          "minUnits": 4,
+          "style": 3,
+          "variables": {
+            "BonusArmor": 40,
+            "BonusMR": 40,
+            "Duration": 10,
+            "EnhancedTeamwideArmor": 30,
+            "StatMultiplier": 1,
+            "TeamwideArmor": 10,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 6,
+          "style": 5,
+          "variables": {
+            "BonusArmor": 70,
+            "BonusMR": 70,
+            "Duration": 10,
+            "EnhancedTeamwideArmor": 30,
+            "StatMultiplier": 1,
+            "TeamwideArmor": 10,
+            "{696854de}": 20
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Bruiser",
+      "name": "Bruiser",
+      "displayName": "Bruiser",
+      "image": "Trait_Icon_14_Bruiser.TFT_Set14.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Bruiser Bronze effect: Your team gains {TeamwideHealth} Health. Bruisers gain more.({MinUnits}) {HealthBonus}% %i:scaleHealth%",
+        "4": "Bruiser Silver effect: Your team gains {TeamwideHealth} Health. Bruisers gain more.({MinUnits}) {HealthBonus}% %i:scaleHealth%",
+        "6": "Bruiser Gold effect: Your team gains {TeamwideHealth} Health. Bruisers gain more.({MinUnits}) {HealthBonus}% %i:scaleHealth%"
+      },
+      "rawDescription": "Your team gains {TeamwideHealth} Health. Bruisers gain more.({MinUnits}) {HealthBonus}% %i:scaleHealth%",
+      "source": "community-dragon",
+      "searchText": "bruiser your team gains {teamwidehealth} health. bruisers gain more.({minunits}) {healthbonus}% %i:scalehealth%",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 3,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "HealthBonus": 0.20000000298023224,
+            "TeamwideHealth": 100,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 5,
+          "minUnits": 4,
+          "style": 3,
+          "variables": {
+            "HealthBonus": 0.44999998807907104,
+            "TeamwideHealth": 100,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 6,
+          "style": 5,
+          "variables": {
+            "HealthBonus": 0.699999988079071,
+            "TeamwideHealth": 100,
+            "{696854de}": 20
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Immortal",
+      "name": "Golden Ox",
+      "displayName": "Golden Ox",
+      "image": "Trait_Icon_14_GoldenOx.TFT_Set14.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Golden Ox Bronze effect: Golden Ox gain Damage Amp and have a chance to drop gold on kill.If you spend @TFTUnitProperty.trait:TFT14_Immortal_GoldNeededForBreakpoint@ gold on rerolls or XP in a single turn, permanently increase their Damage Amp and the gold required for the next bonus. Rerolls count double towards gold spent.(Golden Ox must have fought last round)({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% loot, {ComponentDropChance}% chance loot is a componentCurrent Bonus: @TFTUnitProperty.trait:TFT14_Immortal_GoldBonusStacks@% %i:scaleDA%",
+        "4": "Golden Ox Silver effect: Golden Ox gain Damage Amp and have a chance to drop gold on kill.If you spend @TFTUnitProperty.trait:TFT14_Immortal_GoldNeededForBreakpoint@ gold on rerolls or XP in a single turn, permanently increase their Damage Amp and the gold required for the next bonus. Rerolls count double towards gold spent.(Golden Ox must have fought last round)({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% loot, {ComponentDropChance}% chance loot is a componentCurrent Bonus: @TFTUnitProperty.trait:TFT14_Immortal_GoldBonusStacks@% %i:scaleDA%",
+        "6": "Golden Ox Gold effect: Golden Ox gain Damage Amp and have a chance to drop gold on kill.If you spend @TFTUnitProperty.trait:TFT14_Immortal_GoldNeededForBreakpoint@ gold on rerolls or XP in a single turn, permanently increase their Damage Amp and the gold required for the next bonus. Rerolls count double towards gold spent.(Golden Ox must have fought last round)({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% loot, {ComponentDropChance}% chance loot is a componentCurrent Bonus: @TFTUnitProperty.trait:TFT14_Immortal_GoldBonusStacks@% %i:scaleDA%"
+      },
+      "rawDescription": "Golden Ox gain Damage Amp and have a chance to drop gold on kill.If you spend @TFTUnitProperty.trait:TFT14_Immortal_GoldNeededForBreakpoint@ gold on rerolls or XP in a single turn, permanently increase their Damage Amp and the gold required for the next bonus. Rerolls count double towards gold spent.(Golden Ox must have fought last round)({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% loot, {ComponentDropChance}% chance loot is a componentCurrent Bonus: @TFTUnitProperty.trait:TFT14_Immortal_GoldBonusStacks@% %i:scaleDA%",
+      "source": "community-dragon",
+      "searchText": "golden ox golden ox gain damage amp and have a chance to drop gold on kill.if you spend @tftunitproperty.trait:tft14_immortal_goldneededforbreakpoint@ gold on rerolls or xp in a single turn, permanently increase their damage amp and the gold required for the next bonus. rerolls count double towards gold spent.(golden ox must have fought last round)({minunits}) {damageamp}% %i:scaleda%, {killdrop}% gold({minunits}) {damageamp}% %i:scaleda%, {killdrop}% gold({minunits}) {damageamp}% %i:scaleda%, {killdrop}% loot, {componentdropchance}% chance loot is a componentcurrent bonus: @tftunitproperty.trait:tft14_immortal_goldbonusstacks@% %i:scaleda%",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 3,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "ComponentDropChance": null,
+            "DamageAmp": 0.11999999731779099,
+            "InitialGoldBreakpoint": null,
+            "KillDrop": 0.20000000298023224,
+            "{0bd4b104}": 1,
+            "{19e84ec6}": 1,
+            "{24626b4a}": 0.07999999821186066,
+            "{38d15b70}": null,
+            "{d0e12874}": 7,
+            "{e29303a0}": null
+          }
+        },
+        {
+          "maxUnits": 5,
+          "minUnits": 4,
+          "style": 3,
+          "variables": {
+            "ComponentDropChance": null,
+            "DamageAmp": 0.2199999988079071,
+            "InitialGoldBreakpoint": null,
+            "KillDrop": 0.6000000238418579,
+            "{0bd4b104}": 1,
+            "{19e84ec6}": 1,
+            "{24626b4a}": 0.07999999821186066,
+            "{38d15b70}": null,
+            "{d0e12874}": 4,
+            "{e29303a0}": null
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 6,
+          "style": 5,
+          "variables": {
+            "ComponentDropChance": 0.07000000029802322,
+            "DamageAmp": 0.25,
+            "InitialGoldBreakpoint": null,
+            "KillDrop": 1,
+            "{0bd4b104}": 1,
+            "{19e84ec6}": 1,
+            "{24626b4a}": 0.07999999821186066,
+            "{38d15b70}": null,
+            "{d0e12874}": 3,
+            "{e29303a0}": null
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Marksman",
+      "name": "Marksman",
+      "displayName": "Marksman",
+      "image": "Trait_Icon_14_Marksman.TFT_Set14.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4
+      ],
+      "descriptions": {
+        "2": "Marksman Bronze effect: Marksmen gain Attack Damage. After {EnhancedTime} seconds of combat, they increase their bonus by {EnhancedBonus}%.({MinUnits}) {BonusAD}%&nbsp;%i:scaleAD%({MinUnits}) {BonusAD}%&nbsp;%i:scaleAD%. After {EnhancedTime}&nbsp;seconds, gain {RepeatBonus}%&nbsp;%i:scaleAD% every {RepeatTime}&nbsp;seconds.",
+        "4": "Marksman Silver effect: Marksmen gain Attack Damage. After {EnhancedTime} seconds of combat, they increase their bonus by {EnhancedBonus}%.({MinUnits}) {BonusAD}%&nbsp;%i:scaleAD%({MinUnits}) {BonusAD}%&nbsp;%i:scaleAD%. After {EnhancedTime}&nbsp;seconds, gain {RepeatBonus}%&nbsp;%i:scaleAD% every {RepeatTime}&nbsp;seconds."
+      },
+      "rawDescription": "Marksmen gain Attack Damage. After {EnhancedTime} seconds of combat, they increase their bonus by {EnhancedBonus}%.({MinUnits}) {BonusAD}%&nbsp;%i:scaleAD%({MinUnits}) {BonusAD}%&nbsp;%i:scaleAD%. After {EnhancedTime}&nbsp;seconds, gain {RepeatBonus}%&nbsp;%i:scaleAD% every {RepeatTime}&nbsp;seconds.",
+      "source": "community-dragon",
+      "searchText": "marksman marksmen gain attack damage. after {enhancedtime} seconds of combat, they increase their bonus by {enhancedbonus}%.({minunits}) {bonusad}%&nbsp;%i:scalead%({minunits}) {bonusad}%&nbsp;%i:scalead%. after {enhancedtime}&nbsp;seconds, gain {repeatbonus}%&nbsp;%i:scalead% every {repeattime}&nbsp;seconds.",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 3,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "BonusAD": 0.18000000715255737,
+            "EnhancedBonus": 1,
+            "EnhancedTime": 8,
+            "RepeatBonus": null,
+            "RepeatTime": null,
+            "TeamBonus": null,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 4,
+          "style": 5,
+          "variables": {
+            "BonusAD": 0.3499999940395355,
+            "EnhancedBonus": 1,
+            "EnhancedTime": 8,
+            "RepeatBonus": 0.20000000298023224,
+            "RepeatTime": 6,
+            "TeamBonus": null,
+            "{696854de}": 20
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Swift",
+      "name": "Rapidfire",
+      "displayName": "Rapidfire",
+      "image": "Trait_Icon_10_Rapidfire.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Rapidfire Bronze effect: Your team gains {TeamBonus}% Attack Speed. Rapidfire champions gain more on each attack, stacking up to {MaxStacks} times.({MinUnits}) {AttackSpeed}% %i:scaleAS% per stack",
+        "4": "Rapidfire Silver effect: Your team gains {TeamBonus}% Attack Speed. Rapidfire champions gain more on each attack, stacking up to {MaxStacks} times.({MinUnits}) {AttackSpeed}% %i:scaleAS% per stack",
+        "6": "Rapidfire Gold effect: Your team gains {TeamBonus}% Attack Speed. Rapidfire champions gain more on each attack, stacking up to {MaxStacks} times.({MinUnits}) {AttackSpeed}% %i:scaleAS% per stack"
+      },
+      "rawDescription": "Your team gains {TeamBonus}% Attack Speed. Rapidfire champions gain more on each attack, stacking up to {MaxStacks} times.({MinUnits}) {AttackSpeed}% %i:scaleAS% per stack",
+      "source": "community-dragon",
+      "searchText": "rapidfire your team gains {teambonus}% attack speed. rapidfire champions gain more on each attack, stacking up to {maxstacks} times.({minunits}) {attackspeed}% %i:scaleas% per stack",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 3,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "AttackSpeed": 0.03999999910593033,
+            "MaxStacks": 10,
+            "TeamBonus": 0.10000000149011612,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 5,
+          "minUnits": 4,
+          "style": 3,
+          "variables": {
+            "AttackSpeed": 0.10000000149011612,
+            "MaxStacks": 10,
+            "TeamBonus": 0.10000000149011612,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 6,
+          "style": 5,
+          "variables": {
+            "AttackSpeed": 0.23999999463558197,
+            "MaxStacks": 10,
+            "TeamBonus": 0.10000000149011612,
+            "{696854de}": 20
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Strong",
+      "name": "Slayer",
+      "displayName": "Slayer",
+      "image": "Trait_Icon_4_Slayer.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Slayer Bronze effect: Slayers gain Attack Damage and Omnivamp. Overhealing heals the lowest percent Health Slayer for {OverhealPercent}% of the excess amount.({MinUnits}) {AttackDamage}% %i:scaleAD%, {Healing}% %i:scaleSV%",
+        "4": "Slayer Silver effect: Slayers gain Attack Damage and Omnivamp. Overhealing heals the lowest percent Health Slayer for {OverhealPercent}% of the excess amount.({MinUnits}) {AttackDamage}% %i:scaleAD%, {Healing}% %i:scaleSV%",
+        "6": "Slayer Gold effect: Slayers gain Attack Damage and Omnivamp. Overhealing heals the lowest percent Health Slayer for {OverhealPercent}% of the excess amount.({MinUnits}) {AttackDamage}% %i:scaleAD%, {Healing}% %i:scaleSV%"
+      },
+      "rawDescription": "Slayers gain Attack Damage and Omnivamp. Overhealing heals the lowest percent Health Slayer for {OverhealPercent}% of the excess amount.({MinUnits}) {AttackDamage}% %i:scaleAD%, {Healing}% %i:scaleSV%",
+      "source": "community-dragon",
+      "searchText": "slayer slayers gain attack damage and omnivamp. overhealing heals the lowest percent health slayer for {overhealpercent}% of the excess amount.({minunits}) {attackdamage}% %i:scalead%, {healing}% %i:scalesv%",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 3,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "AttackDamage": 0.15000000596046448,
+            "Healing": 0.15000000596046448,
+            "OverhealPercent": 0.5,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 5,
+          "minUnits": 4,
+          "style": 3,
+          "variables": {
+            "AttackDamage": 0.4000000059604645,
+            "Healing": 0.15000000596046448,
+            "OverhealPercent": 0.5
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 6,
+          "style": 5,
+          "variables": {
+            "AttackDamage": 0.699999988079071,
+            "Healing": 0.20000000298023224,
+            "OverhealPercent": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Controller",
+      "name": "Strategist",
+      "displayName": "Strategist",
+      "image": "Trait_Icon_9_Strategist.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "descriptions": {
+        "2": "Strategist Bronze effect: Combat Start: Allies in the back 2 rows gain Damage Amp. Allies in the front 2 rows gain Durability. Strategists get triple.({MinUnits}) {DamageAmp}% %i:scaleDA%, {Durability}% %i:scaleDR%",
+        "3": "Strategist Silver effect: Combat Start: Allies in the back 2 rows gain Damage Amp. Allies in the front 2 rows gain Durability. Strategists get triple.({MinUnits}) {DamageAmp}% %i:scaleDA%, {Durability}% %i:scaleDR%",
+        "4": "Strategist Gold effect: Combat Start: Allies in the back 2 rows gain Damage Amp. Allies in the front 2 rows gain Durability. Strategists get triple.({MinUnits}) {DamageAmp}% %i:scaleDA%, {Durability}% %i:scaleDR%",
+        "5": "Strategist Prismatic effect: Combat Start: Allies in the back 2 rows gain Damage Amp. Allies in the front 2 rows gain Durability. Strategists get triple.({MinUnits}) {DamageAmp}% %i:scaleDA%, {Durability}% %i:scaleDR%"
+      },
+      "rawDescription": "Combat Start: Allies in the back 2 rows gain Damage Amp. Allies in the front 2 rows gain Durability. Strategists get triple.({MinUnits}) {DamageAmp}% %i:scaleDA%, {Durability}% %i:scaleDR%",
+      "source": "community-dragon",
+      "searchText": "strategist combat start: allies in the back 2 rows gain damage amp. allies in the front 2 rows gain durability. strategists get triple.({minunits}) {damageamp}% %i:scaleda%, {durability}% %i:scaledr%",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 2,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "DamageAmp": 0.05999999865889549,
+            "Durability": 0.03999999910593033,
+            "{c4205fb0}": 2
+          }
+        },
+        {
+          "maxUnits": 3,
+          "minUnits": 3,
+          "style": 3,
+          "variables": {
+            "DamageAmp": 0.09000000357627869,
+            "Durability": 0.05999999865889549,
+            "{c4205fb0}": 2
+          }
+        },
+        {
+          "maxUnits": 4,
+          "minUnits": 4,
+          "style": 3,
+          "variables": {
+            "DamageAmp": 0.11999999731779099,
+            "Durability": 0.07999999821186066,
+            "{c4205fb0}": 2
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 5,
+          "style": 5,
+          "variables": {
+            "DamageAmp": 0.15000000596046448,
+            "Durability": 0.10000000149011612,
+            "{c4205fb0}": 2
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Vanguard",
+      "name": "Vanguard",
+      "displayName": "Vanguard",
+      "image": "Trait_Icon_12_Vanguard.TFT_Set12.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Vanguard Bronze effect: Vanguards gain {DamageReductionPct}% Durability while Shielded. Combat start and {HealthThreshold}%&nbsp;Health: Gain a max Health Shield for {ShieldDuration}&nbsp;seconds.({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health;{EnhancedDurability}%&nbsp;%i:scaleDR% while Shielded",
+        "4": "Vanguard Silver effect: Vanguards gain {DamageReductionPct}% Durability while Shielded. Combat start and {HealthThreshold}%&nbsp;Health: Gain a max Health Shield for {ShieldDuration}&nbsp;seconds.({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health;{EnhancedDurability}%&nbsp;%i:scaleDR% while Shielded",
+        "6": "Vanguard Gold effect: Vanguards gain {DamageReductionPct}% Durability while Shielded. Combat start and {HealthThreshold}%&nbsp;Health: Gain a max Health Shield for {ShieldDuration}&nbsp;seconds.({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health;{EnhancedDurability}%&nbsp;%i:scaleDR% while Shielded"
+      },
+      "rawDescription": "Vanguards gain {DamageReductionPct}% Durability while Shielded. Combat start and {HealthThreshold}%&nbsp;Health: Gain a max Health Shield for {ShieldDuration}&nbsp;seconds.({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health;{EnhancedDurability}%&nbsp;%i:scaleDR% while Shielded",
+      "source": "community-dragon",
+      "searchText": "vanguard vanguards gain {damagereductionpct}% durability while shielded. combat start and {healththreshold}%&nbsp;health: gain a max health shield for {shieldduration}&nbsp;seconds.({minunits}) {shieldpercentamount}% max health({minunits}) {shieldpercentamount}% max health({minunits}) {shieldpercentamount}% max health;{enhanceddurability}%&nbsp;%i:scaledr% while shielded",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 3,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "DamageReductionPct": 0.10000000149011612,
+            "EnhancedDurability": 0.1599999964237213,
+            "HealthThreshold": 0.5,
+            "ShieldDuration": 10,
+            "ShieldPercentAmount": 0.1599999964237213
+          }
+        },
+        {
+          "maxUnits": 5,
+          "minUnits": 4,
+          "style": 3,
+          "variables": {
+            "DamageReductionPct": 0.10000000149011612,
+            "EnhancedDurability": 0.1599999964237213,
+            "HealthThreshold": 0.5,
+            "ShieldDuration": 10,
+            "ShieldPercentAmount": 0.3199999928474426
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 6,
+          "style": 5,
+          "variables": {
+            "DamageReductionPct": 0.10000000149011612,
+            "EnhancedDurability": 0.1599999964237213,
+            "HealthThreshold": 0.5,
+            "ShieldDuration": 10,
+            "ShieldPercentAmount": 0.4000000059604645
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_AnimaSquad",
+      "name": "Anima Squad",
+      "displayName": "Anima Squad",
+      "image": "Trait_Icon_14_AnimaSquad.TFT_Set14.png",
+      "type": "origin",
+      "activationLevels": [
+        3,
+        5,
+        7,
+        10
+      ],
+      "descriptions": {
+        "3": "Anima Squad Bronze effect: At each tier, pick a weapon that a random Anima Squad champion fires periodically during combat. Anima Squad champions gain Armor, Magic Resist, and Damage Amp.({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_1@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_2@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_3@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_4@Weapons scale with Anima Squad star level and stage.",
+        "5": "Anima Squad Silver effect: At each tier, pick a weapon that a random Anima Squad champion fires periodically during combat. Anima Squad champions gain Armor, Magic Resist, and Damage Amp.({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_1@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_2@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_3@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_4@Weapons scale with Anima Squad star level and stage.",
+        "7": "Anima Squad Gold effect: At each tier, pick a weapon that a random Anima Squad champion fires periodically during combat. Anima Squad champions gain Armor, Magic Resist, and Damage Amp.({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_1@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_2@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_3@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_4@Weapons scale with Anima Squad star level and stage.",
+        "10": "Anima Squad Prismatic effect: At each tier, pick a weapon that a random Anima Squad champion fires periodically during combat. Anima Squad champions gain Armor, Magic Resist, and Damage Amp.({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_1@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_2@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_3@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_4@Weapons scale with Anima Squad star level and stage."
+      },
+      "rawDescription": "At each tier, pick a weapon that a random Anima Squad champion fires periodically during combat. Anima Squad champions gain Armor, Magic Resist, and Damage Amp.({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_1@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_2@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_3@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_4@Weapons scale with Anima Squad star level and stage.",
+      "source": "community-dragon",
+      "searchText": "anima squad at each tier, pick a weapon that a random anima squad champion fires periodically during combat. anima squad champions gain armor, magic resist, and damage amp.({minunits}) {resists} %i:scalearmor%%i:scalemr%, {damageamp}% %i:scaleda%,@tftunitproperty.trait:tft14_animasquad_bonus_1@({minunits}) {resists} %i:scalearmor%%i:scalemr%, {damageamp}% %i:scaleda%,@tftunitproperty.trait:tft14_animasquad_bonus_2@({minunits}) {resists} %i:scalearmor%%i:scalemr%, {damageamp}% %i:scaleda%,@tftunitproperty.trait:tft14_animasquad_bonus_3@({minunits}) {resists} %i:scalearmor%%i:scalemr%, {damageamp}% %i:scaleda%,@tftunitproperty.trait:tft14_animasquad_bonus_4@weapons scale with anima squad star level and stage.",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 4,
+          "minUnits": 3,
+          "style": 1,
+          "variables": {
+            "DamageAmp": 0.05000000074505806,
+            "Resists": 10,
+            "{0d14760d}": 4,
+            "{52b463c3}": 0.05999999865889549
+          }
+        },
+        {
+          "maxUnits": 6,
+          "minUnits": 5,
+          "style": 3,
+          "variables": {
+            "DamageAmp": 0.10000000149011612,
+            "Resists": 25,
+            "{0d14760d}": 4,
+            "{52b463c3}": 0.05999999865889549
+          }
+        },
+        {
+          "maxUnits": 9,
+          "minUnits": 7,
+          "style": 5,
+          "variables": {
+            "DamageAmp": 0.15000000596046448,
+            "Resists": 35,
+            "{0d14760d}": 4,
+            "{52b463c3}": 0.05999999865889549
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 10,
+          "style": 6,
+          "variables": {
+            "DamageAmp": 0.25,
+            "Resists": 75,
+            "{0d14760d}": 4,
+            "{52b463c3}": 0.05999999865889549
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_BallisTek",
+      "name": "BoomBot",
+      "displayName": "BoomBot",
+      "image": "Trait_Icon_14_BoomBots.TFT_Set14.png",
+      "type": "origin",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "BoomBot Bronze effect: BoomBots fire a missile every {DamageDealtThreshold} damage dealt at a nearby enemy that deals magic damage. {DamageTakenMod}% of damage taken contributes to damage dealt.({MinUnits}) {MissileDamage} magic damage({MinUnits}) {MissileDamage} magic damage({MinUnits}) Fire two missiles, each dealing {MissileDamage} magic damage",
+        "4": "BoomBot Silver effect: BoomBots fire a missile every {DamageDealtThreshold} damage dealt at a nearby enemy that deals magic damage. {DamageTakenMod}% of damage taken contributes to damage dealt.({MinUnits}) {MissileDamage} magic damage({MinUnits}) {MissileDamage} magic damage({MinUnits}) Fire two missiles, each dealing {MissileDamage} magic damage",
+        "6": "BoomBot Gold effect: BoomBots fire a missile every {DamageDealtThreshold} damage dealt at a nearby enemy that deals magic damage. {DamageTakenMod}% of damage taken contributes to damage dealt.({MinUnits}) {MissileDamage} magic damage({MinUnits}) {MissileDamage} magic damage({MinUnits}) Fire two missiles, each dealing {MissileDamage} magic damage"
+      },
+      "rawDescription": "BoomBots fire a missile every {DamageDealtThreshold} damage dealt at a nearby enemy that deals magic damage. {DamageTakenMod}% of damage taken contributes to damage dealt.({MinUnits}) {MissileDamage} magic damage({MinUnits}) {MissileDamage} magic damage({MinUnits}) Fire two missiles, each dealing {MissileDamage} magic damage",
+      "source": "community-dragon",
+      "searchText": "boombot boombots fire a missile every {damagedealtthreshold} damage dealt at a nearby enemy that deals magic damage. {damagetakenmod}% of damage taken contributes to damage dealt.({minunits}) {missiledamage} magic damage({minunits}) {missiledamage} magic damage({minunits}) fire two missiles, each dealing {missiledamage} magic damage",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 3,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "DamageDealtThreshold": 400,
+            "DamageTakenMod": 0.07999999821186066,
+            "MissileDamage": 150
+          }
+        },
+        {
+          "maxUnits": 5,
+          "minUnits": 4,
+          "style": 3,
+          "variables": {
+            "DamageDealtThreshold": 400,
+            "DamageTakenMod": 0.07999999821186066,
+            "MissileDamage": 325
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 6,
+          "style": 5,
+          "variables": {
+            "DamageDealtThreshold": 400,
+            "DamageTakenMod": 0.07999999821186066,
+            "MissileDamage": 275
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Divinicorp",
+      "name": "Divinicorp",
+      "displayName": "Divinicorp",
+      "image": "Trait_Icon_14_Divinicorp.TFT_Set14.png",
+      "type": "origin",
+      "activationLevels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "descriptions": {
+        "1": "Divinicorp Bronze effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+        "2": "Divinicorp Silver effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+        "3": "Divinicorp Gold effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+        "4": "Divinicorp Prismatic effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+        "5": "Divinicorp Diamond effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+        "6": "Divinicorp Unknown effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+        "7": "Divinicorp Unknown effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%"
+      },
+      "rawDescription": "Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+      "source": "community-dragon",
+      "searchText": "divinicorp divinicorp champions grant unique stats to your team, increased for each divinicorp in play. divinicorp champions gain double.({minunits}) {divinicorpbonus}%&nbsp;bonus.morgana - &nbsp;%i:scaleap% @tftunitproperty.trait:tft14_trait_divinicorp_ap@%rhaast - &nbsp;%i:scalearmor%&nbsp;%i:scalemr% @tftunitproperty.trait:tft14_trait_divinicorp_defenses@senna - &nbsp;%i:scalead% @tftunitproperty.trait:tft14_trait_divinicorp_ad@%gragas - &nbsp;%i:scalehealth% @tftunitproperty.trait:tft14_trait_divinicorp_health@vex - &nbsp;%i:scalecrit% @tftunitproperty.trait:tft14_trait_divinicorp_crit@%renekton - &nbsp;%i:scaleas% @tftunitproperty.trait:tft14_trait_divinicorp_as@%emblem - &nbsp;%i:scalesv% @tftunitproperty.trait:tft14_trait_divinicorp_omnivamp@%",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 1,
+          "minUnits": 1,
+          "style": 1,
+          "variables": {
+            "DivinicorpBonus": 1,
+            "{19e47528}": 9,
+            "{3c9e3624}": 3,
+            "{414a2beb}": 7,
+            "{4803a4eb}": 5,
+            "{4e1c6b85}": 1,
+            "{912546f4}": 8,
+            "{a8a84fe9}": 50,
+            "{f82ecbac}": 6
+          }
+        },
+        {
+          "maxUnits": 2,
+          "minUnits": 2,
+          "style": 3,
+          "variables": {
+            "DivinicorpBonus": 1.100000023841858,
+            "{19e47528}": 9,
+            "{3c9e3624}": 3,
+            "{414a2beb}": 7,
+            "{4803a4eb}": 5,
+            "{4e1c6b85}": 1,
+            "{912546f4}": 8,
+            "{a8a84fe9}": 50,
+            "{f82ecbac}": 6
+          }
+        },
+        {
+          "maxUnits": 3,
+          "minUnits": 3,
+          "style": 3,
+          "variables": {
+            "DivinicorpBonus": 1.25,
+            "{19e47528}": 9,
+            "{3c9e3624}": 3,
+            "{414a2beb}": 7,
+            "{4803a4eb}": 5,
+            "{4e1c6b85}": 1,
+            "{912546f4}": 8,
+            "{a8a84fe9}": 50,
+            "{f82ecbac}": 6
+          }
+        },
+        {
+          "maxUnits": 4,
+          "minUnits": 4,
+          "style": 3,
+          "variables": {
+            "DivinicorpBonus": 1.399999976158142,
+            "{19e47528}": 9,
+            "{3c9e3624}": 3,
+            "{414a2beb}": 7,
+            "{4803a4eb}": 5,
+            "{4e1c6b85}": 1,
+            "{912546f4}": 8,
+            "{a8a84fe9}": 50,
+            "{f82ecbac}": 6
+          }
+        },
+        {
+          "maxUnits": 5,
+          "minUnits": 5,
+          "style": 5,
+          "variables": {
+            "DivinicorpBonus": 1.600000023841858,
+            "{19e47528}": 9,
+            "{3c9e3624}": 3,
+            "{414a2beb}": 7,
+            "{4803a4eb}": 5,
+            "{4e1c6b85}": 1,
+            "{912546f4}": 8,
+            "{a8a84fe9}": 50,
+            "{f82ecbac}": 6
+          }
+        },
+        {
+          "maxUnits": 6,
+          "minUnits": 6,
+          "style": 5,
+          "variables": {
+            "DivinicorpBonus": 1.7999999523162842,
+            "{19e47528}": 9,
+            "{3c9e3624}": 3,
+            "{414a2beb}": 7,
+            "{4803a4eb}": 5,
+            "{4e1c6b85}": 1,
+            "{912546f4}": 8,
+            "{a8a84fe9}": 50,
+            "{f82ecbac}": 6
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 7,
+          "style": 5,
+          "variables": {
+            "DivinicorpBonus": 2,
+            "{19e47528}": 9,
+            "{3c9e3624}": 3,
+            "{414a2beb}": 7,
+            "{4803a4eb}": 5,
+            "{4e1c6b85}": 1,
+            "{912546f4}": 8,
+            "{a8a84fe9}": 50,
+            "{f82ecbac}": 6
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_EdgeRunner",
+      "name": "Exotech",
+      "displayName": "Exotech",
+      "image": "Trait_Icon_14_Exotech.TFT_Set14.png",
+      "type": "origin",
+      "activationLevels": [
+        3,
+        5,
+        7,
+        10
+      ],
+      "descriptions": {
+        "3": "Exotech Bronze effect: Gain unique items that can only be equipped by Exotech champions. They gain Health and Attack Speed for each item equipped.({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item1@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item2@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item3@ ({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,Enhance.",
+        "5": "Exotech Silver effect: Gain unique items that can only be equipped by Exotech champions. They gain Health and Attack Speed for each item equipped.({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item1@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item2@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item3@ ({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,Enhance.",
+        "7": "Exotech Gold effect: Gain unique items that can only be equipped by Exotech champions. They gain Health and Attack Speed for each item equipped.({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item1@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item2@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item3@ ({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,Enhance.",
+        "10": "Exotech Prismatic effect: Gain unique items that can only be equipped by Exotech champions. They gain Health and Attack Speed for each item equipped.({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item1@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item2@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item3@ ({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,Enhance."
+      },
+      "rawDescription": "Gain unique items that can only be equipped by Exotech champions. They gain Health and Attack Speed for each item equipped.({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item1@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item2@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item3@ ({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,Enhance.",
+      "source": "community-dragon",
+      "searchText": "exotech gain unique items that can only be equipped by exotech champions. they gain health and attack speed for each item equipped.({minunits}) {healthbonus} %i:scalehealth%, {asbonus}% %i:scaleas%,@tftunitproperty.trait:tft14_cybernetic_item1@({minunits}) {healthbonus} %i:scalehealth%, {asbonus}% %i:scaleas%,@tftunitproperty.trait:tft14_cybernetic_item2@({minunits}) {healthbonus} %i:scalehealth%, {asbonus}% %i:scaleas%,@tftunitproperty.trait:tft14_cybernetic_item3@ ({minunits}) {healthbonus} %i:scalehealth%, {asbonus}% %i:scaleas%,enhance.",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 4,
+          "minUnits": 3,
+          "style": 1,
+          "variables": {
+            "ASBonus": 2,
+            "HealthBonus": 50,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 6,
+          "minUnits": 5,
+          "style": 3,
+          "variables": {
+            "ASBonus": 5,
+            "HealthBonus": 150,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 9,
+          "minUnits": 7,
+          "style": 5,
+          "variables": {
+            "ASBonus": 9,
+            "HealthBonus": 225,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 10,
+          "style": 6,
+          "variables": {
+            "ASBonus": 40,
+            "HealthBonus": 500,
+            "{696854de}": 20
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_StreetDemon",
+      "name": "Street Demon",
+      "displayName": "Street Demon",
+      "image": "Trait_Icon_14_StreetDemon.TFT_Set14.png",
+      "type": "origin",
+      "activationLevels": [
+        3,
+        5,
+        7,
+        10
+      ],
+      "descriptions": {
+        "3": "Street Demon Bronze effect: Allies in painted hexes gain Health, Ability Power, and Attack Damage. Some hexes are Signature hexes and grant {EmpoweredHexPercentBonus}% more. Street Demons double all bonuses.({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%Paint the town!",
+        "5": "Street Demon Silver effect: Allies in painted hexes gain Health, Ability Power, and Attack Damage. Some hexes are Signature hexes and grant {EmpoweredHexPercentBonus}% more. Street Demons double all bonuses.({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%Paint the town!",
+        "7": "Street Demon Gold effect: Allies in painted hexes gain Health, Ability Power, and Attack Damage. Some hexes are Signature hexes and grant {EmpoweredHexPercentBonus}% more. Street Demons double all bonuses.({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%Paint the town!",
+        "10": "Street Demon Prismatic effect: Allies in painted hexes gain Health, Ability Power, and Attack Damage. Some hexes are Signature hexes and grant {EmpoweredHexPercentBonus}% more. Street Demons double all bonuses.({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%Paint the town!"
+      },
+      "rawDescription": "Allies in painted hexes gain Health, Ability Power, and Attack Damage. Some hexes are Signature hexes and grant {EmpoweredHexPercentBonus}% more. Street Demons double all bonuses.({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%Paint the town!",
+      "source": "community-dragon",
+      "searchText": "street demon allies in painted hexes gain health, ability power, and attack damage. some hexes are signature hexes and grant {empoweredhexpercentbonus}% more. street demons double all bonuses.({minunits}) +{hp}%&nbsp;%i:scalehealth%, {adap}&nbsp;%i:scaleap%, {adap}%&nbsp;%i:scalead%({minunits}) +{hp}%&nbsp;%i:scalehealth%, {adap}&nbsp;%i:scaleap%, {adap}%&nbsp;%i:scalead%({minunits}) +{hp}%&nbsp;%i:scalehealth%, {adap}&nbsp;%i:scaleap%, {adap}%&nbsp;%i:scalead%({minunits}) +{hp}%&nbsp;%i:scalehealth%, {adap}&nbsp;%i:scaleap%, {adap}%&nbsp;%i:scalead%paint the town!",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 4,
+          "minUnits": 3,
+          "style": 1,
+          "variables": {
+            "ADAP": 6,
+            "EmpoweredHexPercentBonus": 0.5,
+            "HP": 0.05999999865889549,
+            "{05fa71fc}": 2,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 6,
+          "minUnits": 5,
+          "style": 3,
+          "variables": {
+            "ADAP": 10,
+            "EmpoweredHexPercentBonus": 0.5,
+            "HP": 0.10000000149011612,
+            "{05fa71fc}": 2,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 9,
+          "minUnits": 7,
+          "style": 5,
+          "variables": {
+            "ADAP": 17,
+            "EmpoweredHexPercentBonus": 0.5,
+            "HP": 0.17000000178813934,
+            "{05fa71fc}": 2,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 10,
+          "style": 6,
+          "variables": {
+            "ADAP": 45,
+            "EmpoweredHexPercentBonus": 0.5,
+            "HP": 0.44999998807907104,
+            "{05fa71fc}": 2,
+            "{696854de}": 20
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Mob",
+      "name": "Syndicate",
+      "displayName": "Syndicate",
+      "image": "Trait_Icon_14_Mob.TFT_Set14.png",
+      "type": "origin",
+      "activationLevels": [
+        3,
+        5,
+        7
+      ],
+      "descriptions": {
+        "3": "Syndicate Bronze effect: Get a Kingpin hat that uniquely upgrades a Syndicate champion's ability.Syndicate champions gain Health and Damage Amp.({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpin({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpins({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, Upgrade Kingpin effect",
+        "5": "Syndicate Silver effect: Get a Kingpin hat that uniquely upgrades a Syndicate champion's ability.Syndicate champions gain Health and Damage Amp.({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpin({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpins({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, Upgrade Kingpin effect",
+        "7": "Syndicate Gold effect: Get a Kingpin hat that uniquely upgrades a Syndicate champion's ability.Syndicate champions gain Health and Damage Amp.({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpin({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpins({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, Upgrade Kingpin effect"
+      },
+      "rawDescription": "Get a Kingpin hat that uniquely upgrades a Syndicate champion's ability.Syndicate champions gain Health and Damage Amp.({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpin({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpins({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, Upgrade Kingpin effect",
+      "source": "community-dragon",
+      "searchText": "syndicate get a kingpin hat that uniquely upgrades a syndicate champion's ability.syndicate champions gain health and damage amp.({minunits}) {mobhealth} %i:scalehealth%, {damageamp}% %i:scaleda%, {numbosses} kingpin({minunits}) {mobhealth} %i:scalehealth%, {damageamp}% %i:scaleda%, {numbosses} kingpins({minunits}) {mobhealth} %i:scalehealth%, {damageamp}% %i:scaleda%, upgrade kingpin effect",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 4,
+          "minUnits": 3,
+          "style": 1,
+          "variables": {
+            "DamageAmp": 0.05000000074505806,
+            "MobHealth": 100,
+            "NumBosses": 1,
+            "{61b5370e}": 1
+          }
+        },
+        {
+          "maxUnits": 6,
+          "minUnits": 5,
+          "style": 3,
+          "variables": {
+            "DamageAmp": 0.15000000596046448,
+            "MobHealth": 400,
+            "NumBosses": 2,
+            "{61b5370e}": 2
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 7,
+          "style": 5,
+          "variables": {
+            "DamageAmp": 0.20000000298023224,
+            "MobHealth": 500,
+            "NumBosses": 2,
+            "{61b5370e}": 2
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Supercharge",
+      "name": "A.M.P.",
+      "displayName": "A.M.P.",
+      "image": "Trait_Icon_14_Amp.TFT_Set14.png",
+      "type": "special",
+      "activationLevels": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "descriptions": {
+        "2": "A.M.P. Bronze effect: A.M.P. champions upgrade their abilities in unique ways with Amp (%i:set14AmpIcon%). They also gain&nbsp;Health.({MinUnits}) {SuperchargeAmount} %i:set14AmpIcon%, {HPAmt} %i:scaleHealth%",
+        "3": "A.M.P. Silver effect: A.M.P. champions upgrade their abilities in unique ways with Amp (%i:set14AmpIcon%). They also gain&nbsp;Health.({MinUnits}) {SuperchargeAmount} %i:set14AmpIcon%, {HPAmt} %i:scaleHealth%",
+        "4": "A.M.P. Gold effect: A.M.P. champions upgrade their abilities in unique ways with Amp (%i:set14AmpIcon%). They also gain&nbsp;Health.({MinUnits}) {SuperchargeAmount} %i:set14AmpIcon%, {HPAmt} %i:scaleHealth%",
+        "5": "A.M.P. Prismatic effect: A.M.P. champions upgrade their abilities in unique ways with Amp (%i:set14AmpIcon%). They also gain&nbsp;Health.({MinUnits}) {SuperchargeAmount} %i:set14AmpIcon%, {HPAmt} %i:scaleHealth%"
+      },
+      "rawDescription": "A.M.P. champions upgrade their abilities in unique ways with Amp (%i:set14AmpIcon%). They also gain&nbsp;Health.({MinUnits}) {SuperchargeAmount} %i:set14AmpIcon%, {HPAmt} %i:scaleHealth%",
+      "source": "community-dragon",
+      "searchText": "a.m.p. a.m.p. champions upgrade their abilities in unique ways with amp (%i:set14ampicon%). they also gain&nbsp;health.({minunits}) {superchargeamount} %i:set14ampicon%, {hpamt} %i:scalehealth%",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 2,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "HPAmt": 100,
+            "SuperchargeAmount": 1
+          }
+        },
+        {
+          "maxUnits": 3,
+          "minUnits": 3,
+          "style": 3,
+          "variables": {
+            "HPAmt": 200,
+            "SuperchargeAmount": 2
+          }
+        },
+        {
+          "maxUnits": 4,
+          "minUnits": 4,
+          "style": 3,
+          "variables": {
+            "HPAmt": 400,
+            "SuperchargeAmount": 3
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 5,
+          "style": 5,
+          "variables": {
+            "HPAmt": 600,
+            "SuperchargeAmount": 5
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Cyberboss",
+      "name": "Cyberboss",
+      "displayName": "Cyberboss",
+      "image": "Trait_Icon_14_Cyberbosses.TFT_Set14.png",
+      "type": "special",
+      "activationLevels": [
+        2,
+        3,
+        4
+      ],
+      "descriptions": {
+        "2": "Cyberboss Bronze effect: Your strongest Cyberboss upgrades to its final form and gains Health, Ability Power, and its ability hits more&nbsp;enemies.({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) All Cyberbosses upgrade. Your strongest Cyberboss gains {BigBossPercentHealth}% %i:scaleHealth% and {BigBossAP} %i:scaleAP%.",
+        "3": "Cyberboss Silver effect: Your strongest Cyberboss upgrades to its final form and gains Health, Ability Power, and its ability hits more&nbsp;enemies.({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) All Cyberbosses upgrade. Your strongest Cyberboss gains {BigBossPercentHealth}% %i:scaleHealth% and {BigBossAP} %i:scaleAP%.",
+        "4": "Cyberboss Gold effect: Your strongest Cyberboss upgrades to its final form and gains Health, Ability Power, and its ability hits more&nbsp;enemies.({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) All Cyberbosses upgrade. Your strongest Cyberboss gains {BigBossPercentHealth}% %i:scaleHealth% and {BigBossAP} %i:scaleAP%."
+      },
+      "rawDescription": "Your strongest Cyberboss upgrades to its final form and gains Health, Ability Power, and its ability hits more&nbsp;enemies.({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) All Cyberbosses upgrade. Your strongest Cyberboss gains {BigBossPercentHealth}% %i:scaleHealth% and {BigBossAP} %i:scaleAP%.",
+      "source": "community-dragon",
+      "searchText": "cyberboss your strongest cyberboss upgrades to its final form and gains health, ability power, and its ability hits more&nbsp;enemies.({minunits}) {bosspercenthealth}%&nbsp;%i:scalehealth%, {bossap}&nbsp;%i:scaleap% ({minunits}) {bosspercenthealth}%&nbsp;%i:scalehealth%, {bossap}&nbsp;%i:scaleap% ({minunits}) all cyberbosses upgrade. your strongest cyberboss gains {bigbosspercenthealth}% %i:scalehealth% and {bigbossap} %i:scaleap%.",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 2,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "BigBossAP": 40,
+            "BigBossPercentHealth": 0.4000000059604645,
+            "BossAP": 20,
+            "BossPercentHealth": 0.25,
+            "DamageMod": 0.30000001192092896,
+            "{23b17109}": 0.800000011920929,
+            "{c7b34fa5}": 0.3499999940395355
+          }
+        },
+        {
+          "maxUnits": 3,
+          "minUnits": 3,
+          "style": 3,
+          "variables": {
+            "BigBossAP": 40,
+            "BigBossPercentHealth": 0.4000000059604645,
+            "BossAP": 30,
+            "BossPercentHealth": 0.33000001311302185,
+            "DamageMod": 0.30000001192092896,
+            "{23b17109}": 0.800000011920929,
+            "{c7b34fa5}": 0.3499999940395355
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 4,
+          "style": 5,
+          "variables": {
+            "BigBossAP": 40,
+            "BigBossPercentHealth": 0.4000000059604645,
+            "BossAP": 30,
+            "BossPercentHealth": 0.33000001311302185,
+            "DamageMod": 0.30000001192092896,
+            "{23b17109}": 0.800000011920929,
+            "{c7b34fa5}": 0.3499999940395355
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Suits",
+      "name": "Cypher",
+      "displayName": "Cypher",
+      "image": "Trait_Icon_14_Cypher.TFT_Set14.png",
+      "type": "special",
+      "activationLevels": [
+        3,
+        4,
+        5
+      ],
+      "descriptions": {
+        "3": "Cypher Bronze effect: Gain Intel by losing combat, increased for loss streaks. Gain a small amount for killing&nbsp;enemies. You may trade your Intel for loot one time on round{CashoutStage1}-{CashoutRound1}, {CashoutStage2}-{CashoutRound2}, {CashoutStage3}-{CashoutRound3}, {CashoutStage4}-{CashoutRound4}, or {CashoutStage5}-{CashoutRound5}.After trading Intel, Cypher champions gain Attack Damage and Ability Power.({MinUnits}) {ValueMultiplier}x Intel, {AttackDamage}% %i:scaleAD%%i:scaleAP%",
+        "4": "Cypher Silver effect: Gain Intel by losing combat, increased for loss streaks. Gain a small amount for killing&nbsp;enemies. You may trade your Intel for loot one time on round{CashoutStage1}-{CashoutRound1}, {CashoutStage2}-{CashoutRound2}, {CashoutStage3}-{CashoutRound3}, {CashoutStage4}-{CashoutRound4}, or {CashoutStage5}-{CashoutRound5}.After trading Intel, Cypher champions gain Attack Damage and Ability Power.({MinUnits}) {ValueMultiplier}x Intel, {AttackDamage}% %i:scaleAD%%i:scaleAP%",
+        "5": "Cypher Gold effect: Gain Intel by losing combat, increased for loss streaks. Gain a small amount for killing&nbsp;enemies. You may trade your Intel for loot one time on round{CashoutStage1}-{CashoutRound1}, {CashoutStage2}-{CashoutRound2}, {CashoutStage3}-{CashoutRound3}, {CashoutStage4}-{CashoutRound4}, or {CashoutStage5}-{CashoutRound5}.After trading Intel, Cypher champions gain Attack Damage and Ability Power.({MinUnits}) {ValueMultiplier}x Intel, {AttackDamage}% %i:scaleAD%%i:scaleAP%"
+      },
+      "rawDescription": "Gain Intel by losing combat, increased for loss streaks. Gain a small amount for killing&nbsp;enemies. You may trade your Intel for loot one time on round{CashoutStage1}-{CashoutRound1}, {CashoutStage2}-{CashoutRound2}, {CashoutStage3}-{CashoutRound3}, {CashoutStage4}-{CashoutRound4}, or {CashoutStage5}-{CashoutRound5}.After trading Intel, Cypher champions gain Attack Damage and Ability Power.({MinUnits}) {ValueMultiplier}x Intel, {AttackDamage}% %i:scaleAD%%i:scaleAP%",
+      "source": "community-dragon",
+      "searchText": "cypher gain intel by losing combat, increased for loss streaks. gain a small amount for killing&nbsp;enemies. you may trade your intel for loot one time on round{cashoutstage1}-{cashoutround1}, {cashoutstage2}-{cashoutround2}, {cashoutstage3}-{cashoutround3}, {cashoutstage4}-{cashoutround4}, or {cashoutstage5}-{cashoutround5}.after trading intel, cypher champions gain attack damage and ability power.({minunits}) {valuemultiplier}x intel, {attackdamage}% %i:scalead%%i:scaleap%",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 3,
+          "minUnits": 3,
+          "style": 1,
+          "variables": {
+            "AbilityPower": 30,
+            "AttackDamage": 0.30000001192092896,
+            "CashoutRound1": null,
+            "CashoutRound2": null,
+            "CashoutRound3": null,
+            "CashoutRound4": null,
+            "CashoutRound5": null,
+            "CashoutStage1": null,
+            "CashoutStage2": null,
+            "CashoutStage3": null,
+            "CashoutStage4": null,
+            "CashoutStage5": null,
+            "ValueMultiplier": 1,
+            "{1f98073f}": 0.029999999329447746,
+            "{2c9b3e4e}": 0.5,
+            "{48df4661}": 5,
+            "{76664467}": null,
+            "{7d910997}": null,
+            "{8d9e3028}": 2,
+            "{f2f00c97}": null
+          }
+        },
+        {
+          "maxUnits": 4,
+          "minUnits": 4,
+          "style": 3,
+          "variables": {
+            "AbilityPower": 45,
+            "AttackDamage": 0.44999998807907104,
+            "CashoutRound1": null,
+            "CashoutRound2": null,
+            "CashoutRound3": null,
+            "CashoutRound4": null,
+            "CashoutRound5": null,
+            "CashoutStage1": null,
+            "CashoutStage2": null,
+            "CashoutStage3": null,
+            "CashoutStage4": null,
+            "CashoutStage5": null,
+            "ValueMultiplier": 1.5,
+            "{1f98073f}": 0.029999999329447746,
+            "{2c9b3e4e}": 0.5,
+            "{48df4661}": 5,
+            "{76664467}": null,
+            "{7d910997}": null,
+            "{8d9e3028}": 2,
+            "{f2f00c97}": null
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 5,
+          "style": 5,
+          "variables": {
+            "AbilityPower": 65,
+            "AttackDamage": 0.6499999761581421,
+            "CashoutRound1": null,
+            "CashoutRound2": null,
+            "CashoutRound3": null,
+            "CashoutRound4": null,
+            "CashoutRound5": null,
+            "CashoutStage1": null,
+            "CashoutStage2": null,
+            "CashoutStage3": null,
+            "CashoutStage4": null,
+            "CashoutStage5": null,
+            "ValueMultiplier": 2,
+            "{1f98073f}": 0.029999999329447746,
+            "{2c9b3e4e}": 0.5,
+            "{48df4661}": 5,
+            "{76664467}": null,
+            "{7d910997}": null,
+            "{8d9e3028}": 2,
+            "{f2f00c97}": null
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Thirsty",
+      "name": "Dynamo",
+      "displayName": "Dynamo",
+      "image": "Trait_Icon_14_Dynamo.TFT_Set14.png",
+      "type": "special",
+      "activationLevels": [
+        2,
+        3,
+        4
+      ],
+      "descriptions": {
+        "2": "Dynamo Bronze effect: Every {Timer} seconds, your team gains Mana. Dynamos gain {ThirstyBonus}% more.({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana%",
+        "3": "Dynamo Silver effect: Every {Timer} seconds, your team gains Mana. Dynamos gain {ThirstyBonus}% more.({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana%",
+        "4": "Dynamo Gold effect: Every {Timer} seconds, your team gains Mana. Dynamos gain {ThirstyBonus}% more.({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana%"
+      },
+      "rawDescription": "Every {Timer} seconds, your team gains Mana. Dynamos gain {ThirstyBonus}% more.({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana%",
+      "source": "community-dragon",
+      "searchText": "dynamo every {timer} seconds, your team gains mana. dynamos gain {thirstybonus}% more.({minunits}) {mana} %i:scalemana% ({minunits}) {mana} %i:scalemana% ({minunits}) {mana} %i:scalemana%",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 2,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "Mana": 4,
+            "ThirstyBonus": 1,
+            "Timer": 3,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 3,
+          "minUnits": 3,
+          "style": 3,
+          "variables": {
+            "Mana": 7,
+            "ThirstyBonus": 1,
+            "Timer": 3,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 4,
+          "style": 5,
+          "variables": {
+            "Mana": 10,
+            "ThirstyBonus": 1,
+            "Timer": 3,
+            "{696854de}": 20
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_HotRod",
+      "name": "Nitro",
+      "displayName": "Nitro",
+      "image": "Trait_Icon_14_NitroForge.TFT_Set14.png",
+      "type": "special",
+      "activationLevels": [
+        3,
+        4
+      ],
+      "descriptions": {
+        "3": "Nitro Bronze effect: Every round, unique Nitro champions grant Chrome to R-080T, based on their star level. Each Chrome grants {HealthPerScrap} Health and {APPerScrap} Ability Power. At {FourStarScrapThreshold} Chrome, it upgrades to T-43X! ({MinUnits}) Summon R-080T!({MinUnits}) Fire a giant laser!Chrome per star: {ScrapPerOneStar}/{ScrapPerTwoStar}/{ScrapPerThreeStar}/{ScrapPerFourStar}",
+        "4": "Nitro Silver effect: Every round, unique Nitro champions grant Chrome to R-080T, based on their star level. Each Chrome grants {HealthPerScrap} Health and {APPerScrap} Ability Power. At {FourStarScrapThreshold} Chrome, it upgrades to T-43X! ({MinUnits}) Summon R-080T!({MinUnits}) Fire a giant laser!Chrome per star: {ScrapPerOneStar}/{ScrapPerTwoStar}/{ScrapPerThreeStar}/{ScrapPerFourStar}"
+      },
+      "rawDescription": "Every round, unique Nitro champions grant Chrome to R-080T, based on their star level. Each Chrome grants {HealthPerScrap} Health and {APPerScrap} Ability Power. At {FourStarScrapThreshold} Chrome, it upgrades to T-43X! ({MinUnits}) Summon R-080T!({MinUnits}) Fire a giant laser!Chrome per star: {ScrapPerOneStar}/{ScrapPerTwoStar}/{ScrapPerThreeStar}/{ScrapPerFourStar}",
+      "source": "community-dragon",
+      "searchText": "nitro every round, unique nitro champions grant chrome to r-080t, based on their star level. each chrome grants {healthperscrap} health and {apperscrap} ability power. at {fourstarscrapthreshold} chrome, it upgrades to t-43x! ({minunits}) summon r-080t!({minunits}) fire a giant laser!chrome per star: {scrapperonestar}/{scrappertwostar}/{scrapperthreestar}/{scrapperfourstar}",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 3,
+          "minUnits": 3,
+          "style": 1,
+          "variables": {
+            "APPerScrap": 1,
+            "FourStarScrapThreshold": 200,
+            "HealthPerScrap": 11,
+            "ScrapPerFourStar": null,
+            "ScrapPerOneStar": null,
+            "ScrapPerThreeStar": null,
+            "ScrapPerTwoStar": null,
+            "{00933536}": 300,
+            "{4d6eede4}": null,
+            "{4eb7d3e8}": 800,
+            "{bbd3f177}": 130,
+            "{c5d6c3d5}": 60,
+            "{e75fa38f}": 500,
+            "{f38b0f5d}": 100
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 4,
+          "style": 5,
+          "variables": {
+            "APPerScrap": 1,
+            "FourStarScrapThreshold": 200,
+            "HealthPerScrap": 11,
+            "ScrapPerFourStar": null,
+            "ScrapPerOneStar": null,
+            "ScrapPerThreeStar": null,
+            "ScrapPerTwoStar": null,
+            "{00933536}": 300,
+            "{4d6eede4}": null,
+            "{4eb7d3e8}": 800,
+            "{bbd3f177}": 130,
+            "{c5d6c3d5}": 60,
+            "{e75fa38f}": 500,
+            "{f38b0f5d}": 100
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Techie",
+      "name": "Techie",
+      "displayName": "Techie",
+      "image": "Trait_Icon_14_Techie.TFT_Set14.png",
+      "type": "special",
+      "activationLevels": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "descriptions": {
+        "2": "Techie Bronze effect: Techies gain Ability Power.Enemies hit by their abilities deal {DamageAmpDebuff}% less damage for {DebuffDuration} seconds.({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP% Enemies hit deal {EnhancedDebuff}% less damage.",
+        "4": "Techie Silver effect: Techies gain Ability Power.Enemies hit by their abilities deal {DamageAmpDebuff}% less damage for {DebuffDuration} seconds.({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP% Enemies hit deal {EnhancedDebuff}% less damage.",
+        "6": "Techie Gold effect: Techies gain Ability Power.Enemies hit by their abilities deal {DamageAmpDebuff}% less damage for {DebuffDuration} seconds.({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP% Enemies hit deal {EnhancedDebuff}% less damage.",
+        "8": "Techie Prismatic effect: Techies gain Ability Power.Enemies hit by their abilities deal {DamageAmpDebuff}% less damage for {DebuffDuration} seconds.({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP% Enemies hit deal {EnhancedDebuff}% less damage."
+      },
+      "rawDescription": "Techies gain Ability Power.Enemies hit by their abilities deal {DamageAmpDebuff}% less damage for {DebuffDuration} seconds.({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP% Enemies hit deal {EnhancedDebuff}% less damage.",
+      "source": "community-dragon",
+      "searchText": "techie techies gain ability power.enemies hit by their abilities deal {damageampdebuff}% less damage for {debuffduration} seconds.({minunits}) {apbonus} %i:scaleap%({minunits}) {apbonus} %i:scaleap%({minunits}) {apbonus} %i:scaleap%({minunits}) {apbonus} %i:scaleap% enemies hit deal {enhanceddebuff}% less damage.",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 3,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "APBonus": 20,
+            "DamageAmpDebuff": 0.10000000149011612,
+            "DebuffDuration": 3,
+            "EnhancedDebuff": 0.18000000715255737
+          }
+        },
+        {
+          "maxUnits": 5,
+          "minUnits": 4,
+          "style": 3,
+          "variables": {
+            "APBonus": 50,
+            "DamageAmpDebuff": 0.10000000149011612,
+            "DebuffDuration": 3,
+            "EnhancedDebuff": 0.18000000715255737
+          }
+        },
+        {
+          "maxUnits": 7,
+          "minUnits": 6,
+          "style": 5,
+          "variables": {
+            "APBonus": 85,
+            "DamageAmpDebuff": 0.10000000149011612,
+            "DebuffDuration": 3,
+            "EnhancedDebuff": 0.18000000715255737
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 8,
+          "style": 5,
+          "variables": {
+            "APBonus": 125,
+            "DamageAmpDebuff": 0.10000000149011612,
+            "DebuffDuration": 3,
+            "EnhancedDebuff": 0.18000000715255737
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Netgod",
+      "name": "God of the Net",
+      "displayName": "God of the Net",
+      "image": "Trait_Icon_14_GodoftheNet.TFT_Set14.png",
+      "type": "unique",
+      "activationLevels": [
+        1
+      ],
+      "descriptions": {
+        "1": "After {Rounds} player combats, open an Armory of Trait Mods that permanently reprogram a champion to benefit from a trait (but not contribute).Every time you get a Trait Mod, the next one requires {RoundIncrement} additional round.Rounds remaining: @TFTUnitProperty.trait:TFT14_Netgod_RoundsRemaining@Champions can only have one Trait Mod.Equipped Mods:@TFTUnitProperty.trait:TFT14_Netgod_Trait1@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ1@@TFTUnitProperty.trait:TFT14_Netgod_Trait2@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ2@@TFTUnitProperty.trait:TFT14_Netgod_Trait3@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ3@@TFTUnitProperty.trait:TFT14_Netgod_Trait4@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ4@@TFTUnitProperty.trait:TFT14_Netgod_Trait5@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ5@@TFTUnitProperty.trait:TFT14_Netgod_Trait6@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ6@@TFTUnitProperty.trait:TFT14_Netgod_Trait7@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ7@@TFTUnitProperty.trait:TFT14_Netgod_Trait8@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ8@@TFTUnitProperty.trait:TFT14_Netgod_Trait9@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ9@"
+      },
+      "rawDescription": "After {Rounds} player combats, open an Armory of Trait Mods that permanently reprogram a champion to benefit from a trait (but not contribute).Every time you get a Trait Mod, the next one requires {RoundIncrement} additional round.Rounds remaining: @TFTUnitProperty.trait:TFT14_Netgod_RoundsRemaining@Champions can only have one Trait Mod.Equipped Mods:@TFTUnitProperty.trait:TFT14_Netgod_Trait1@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ1@@TFTUnitProperty.trait:TFT14_Netgod_Trait2@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ2@@TFTUnitProperty.trait:TFT14_Netgod_Trait3@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ3@@TFTUnitProperty.trait:TFT14_Netgod_Trait4@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ4@@TFTUnitProperty.trait:TFT14_Netgod_Trait5@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ5@@TFTUnitProperty.trait:TFT14_Netgod_Trait6@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ6@@TFTUnitProperty.trait:TFT14_Netgod_Trait7@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ7@@TFTUnitProperty.trait:TFT14_Netgod_Trait8@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ8@@TFTUnitProperty.trait:TFT14_Netgod_Trait9@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ9@",
+      "source": "community-dragon",
+      "searchText": "god of the net after {rounds} player combats, open an armory of trait mods that permanently reprogram a champion to benefit from a trait (but not contribute).every time you get a trait mod, the next one requires {roundincrement} additional round.rounds remaining: @tftunitproperty.trait:tft14_netgod_roundsremaining@champions can only have one trait mod.equipped mods:@tftunitproperty.trait:tft14_netgod_trait1@ - @tftunitproperty.trait:tft14_netgod_champ1@@tftunitproperty.trait:tft14_netgod_trait2@ - @tftunitproperty.trait:tft14_netgod_champ2@@tftunitproperty.trait:tft14_netgod_trait3@ - @tftunitproperty.trait:tft14_netgod_champ3@@tftunitproperty.trait:tft14_netgod_trait4@ - @tftunitproperty.trait:tft14_netgod_champ4@@tftunitproperty.trait:tft14_netgod_trait5@ - @tftunitproperty.trait:tft14_netgod_champ5@@tftunitproperty.trait:tft14_netgod_trait6@ - @tftunitproperty.trait:tft14_netgod_champ6@@tftunitproperty.trait:tft14_netgod_trait7@ - @tftunitproperty.trait:tft14_netgod_champ7@@tftunitproperty.trait:tft14_netgod_trait8@ - @tftunitproperty.trait:tft14_netgod_champ8@@tftunitproperty.trait:tft14_netgod_trait9@ - @tftunitproperty.trait:tft14_netgod_champ9@",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 25000,
+          "minUnits": 1,
+          "style": 4,
+          "variables": {
+            "RoundIncrement": 1,
+            "rounds": 2,
+            "{25ec242e}": 9
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Overlord",
+      "name": "Overlord",
+      "displayName": "Overlord",
+      "image": "Trait_Icon_14_Overlord.TFT_Set14.png",
+      "type": "unique",
+      "activationLevels": [
+        1
+      ],
+      "descriptions": {
+        "1": "The Overlord takes a bite out of the unit in the hex behind him, dealing {HPPercentDamage}% of their max Health as true damage. He gains {PercentHPGain}% of their Health and {PercentADGain}% of their Attack Damage."
+      },
+      "rawDescription": "The Overlord takes a bite out of the unit in the hex behind him, dealing {HPPercentDamage}% of their max Health as true damage. He gains {PercentHPGain}% of their Health and {PercentADGain}% of their Attack Damage.",
+      "source": "community-dragon",
+      "searchText": "overlord the overlord takes a bite out of the unit in the hex behind him, dealing {hppercentdamage}% of their max health as true damage. he gains {percenthpgain}% of their health and {percentadgain}% of their attack damage.",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 25000,
+          "minUnits": 1,
+          "style": 4,
+          "variables": {
+            "HPPercentDamage": 0.4000000059604645,
+            "NumHexes": 1,
+            "PercentADGain": 0.25,
+            "PercentHPGain": 0.4000000059604645,
+            "{3b5ffaa0}": 1,
+            "{99dbd967}": 0.33000001311302185,
+            "{c028da4f}": 1
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_ViegoUniqueTrait",
+      "name": "Soul Killer",
+      "displayName": "Soul Killer",
+      "image": "Trait_Icon_14_SoulKiller.TFT_Set14.png",
+      "type": "unique",
+      "activationLevels": [
+        1
+      ],
+      "descriptions": {
+        "1": "Gain a hologram copy of the highest cost enemy Viego helped kill last round. It has {Level1Health}/{Level2Health}/{Level3Health} Health, deals {Level1Damage}%/{Level2Damage}%/{Level3Damage}% damage, and has {ItemCount} recommended item."
+      },
+      "rawDescription": "Gain a hologram copy of the highest cost enemy Viego helped kill last round. It has {Level1Health}/{Level2Health}/{Level3Health} Health, deals {Level1Damage}%/{Level2Damage}%/{Level3Damage}% damage, and has {ItemCount} recommended item.",
+      "source": "community-dragon",
+      "searchText": "soul killer gain a hologram copy of the highest cost enemy viego helped kill last round. it has {level1health}/{level2health}/{level3health} health, deals {level1damage}%/{level2damage}%/{level3damage}% damage, and has {itemcount} recommended item.",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 25000,
+          "minUnits": 1,
+          "style": 4,
+          "variables": {
+            "ItemCount": 1,
+            "Level1Damage": 0.30000001192092896,
+            "Level1Health": 900,
+            "Level2Damage": 0.4000000059604645,
+            "Level2Health": 1350,
+            "Level3Damage": 2,
+            "Level3Health": 9001
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Virus",
+      "name": "Virus",
+      "displayName": "Virus",
+      "image": "Trait_Icon_14_Virus.TFT_Set14.png",
+      "type": "unique",
+      "activationLevels": [
+        1
+      ],
+      "descriptions": {
+        "1": "The Virus infects your shop with a {ChanceToSee}% chance to spawn a bloblet. When purchased, it merges and increases the strongest Zac's max Health by {BonusPercentHPPerStack}% and Ability Power by {BonusAPPerStack} (doubled in Hyper Roll). (Total Bloblets: @TFTUnitProperty.trait:TFT14_Virus_Stacks@)"
+      },
+      "rawDescription": "The Virus infects your shop with a {ChanceToSee}% chance to spawn a bloblet. When purchased, it merges and increases the strongest Zac's max Health by {BonusPercentHPPerStack}% and Ability Power by {BonusAPPerStack} (doubled in Hyper Roll). (Total Bloblets: @TFTUnitProperty.trait:TFT14_Virus_Stacks@)",
+      "source": "community-dragon",
+      "searchText": "virus the virus infects your shop with a {chancetosee}% chance to spawn a bloblet. when purchased, it merges and increases the strongest zac's max health by {bonuspercenthpperstack}% and ability power by {bonusapperstack} (doubled in hyper roll). (total bloblets: @tftunitproperty.trait:tft14_virus_stacks@)",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 25000,
+          "minUnits": 1,
+          "style": 4,
+          "variables": {
+            "BonusAPPerStack": 4,
+            "BonusPercentHPPerStack": 0.029999999329447746,
+            "ChanceToSee": 10
+          }
+        }
+      ]
+    },
+    {
+      "key": "TFT14_Cutter",
+      "name": "Executioner",
+      "displayName": "Executioner",
+      "image": "Trait_Icon_4_Executioner.png",
+      "type": "unknown",
+      "activationLevels": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "descriptions": {
+        "2": "Executioner Bronze effect: Executioner Abilities can critically strike. They also gain bonus Critical Strike Chance and Critical Strike Damage.If the target's Health is below {HealthThreshold}%, the bonus Critical Strike Damage is doubled.({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%; also gain {DamageReduction}% Durability",
+        "3": "Executioner Silver effect: Executioner Abilities can critically strike. They also gain bonus Critical Strike Chance and Critical Strike Damage.If the target's Health is below {HealthThreshold}%, the bonus Critical Strike Damage is doubled.({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%; also gain {DamageReduction}% Durability",
+        "4": "Executioner Gold effect: Executioner Abilities can critically strike. They also gain bonus Critical Strike Chance and Critical Strike Damage.If the target's Health is below {HealthThreshold}%, the bonus Critical Strike Damage is doubled.({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%; also gain {DamageReduction}% Durability",
+        "5": "Executioner Prismatic effect: Executioner Abilities can critically strike. They also gain bonus Critical Strike Chance and Critical Strike Damage.If the target's Health is below {HealthThreshold}%, the bonus Critical Strike Damage is doubled.({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%; also gain {DamageReduction}% Durability"
+      },
+      "rawDescription": "Executioner Abilities can critically strike. They also gain bonus Critical Strike Chance and Critical Strike Damage.If the target's Health is below {HealthThreshold}%, the bonus Critical Strike Damage is doubled.({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%; also gain {DamageReduction}% Durability",
+      "source": "community-dragon",
+      "searchText": "executioner executioner abilities can critically strike. they also gain bonus critical strike chance and critical strike damage.if the target's health is below {healththreshold}%, the bonus critical strike damage is doubled.({minunits}) {crit_percent}%&nbsp;%i:scalecrit%, {crit_damage}%&nbsp;%i:scalecritmult%({minunits}) {crit_percent}%&nbsp;%i:scalecrit%, {crit_damage}%&nbsp;%i:scalecritmult%({minunits}) {crit_percent}%&nbsp;%i:scalecrit%, {crit_damage}%&nbsp;%i:scalecritmult%({minunits}) {crit_percent}%&nbsp;%i:scalecrit%, {crit_damage}%&nbsp;%i:scalecritmult%; also gain {damagereduction}% durability",
+      "isVerified": true,
+      "needsResearch": false,
+      "effects": [
+        {
+          "maxUnits": 2,
+          "minUnits": 2,
+          "style": 1,
+          "variables": {
+            "CRIT_DAMAGE": 0.05000000074505806,
+            "CRIT_PERCENT": 0.25,
+            "DamageReduction": null,
+            "HealthThreshold": 0.20000000298023224,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 3,
+          "minUnits": 3,
+          "style": 3,
+          "variables": {
+            "CRIT_DAMAGE": 0.10000000149011612,
+            "CRIT_PERCENT": 0.3499999940395355,
+            "DamageReduction": null,
+            "HealthThreshold": 0.20000000298023224,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 4,
+          "minUnits": 4,
+          "style": 3,
+          "variables": {
+            "CRIT_DAMAGE": 0.15000000596046448,
+            "CRIT_PERCENT": 0.44999998807907104,
+            "DamageReduction": null,
+            "HealthThreshold": 0.20000000298023224,
+            "{696854de}": 20
+          }
+        },
+        {
+          "maxUnits": 25000,
+          "minUnits": 5,
+          "style": 5,
+          "variables": {
+            "CRIT_DAMAGE": 0.15000000596046448,
+            "CRIT_PERCENT": 0.5,
+            "DamageReduction": 0.11999999731779099,
+            "HealthThreshold": 0.20000000298023224,
+            "{696854de}": 20
+          }
+        }
+      ]
+    }
+  ]
+}

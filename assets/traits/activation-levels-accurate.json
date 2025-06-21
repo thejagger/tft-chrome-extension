@@ -1,0 +1,507 @@
+{
+  "TFT14_Armorclad": {
+    "name": "Bastion",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Bastion Bronze effect: Your team gains {TeamwideArmor} Armor and Magic Resist. Bastions gain more.For the first {Duration} seconds of combat, Bastions increase their bonus by {StatMultiplier}%.({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% Non-Bastions gain an additional {EnhancedTeamwideArmor} %i:scaleArmor%%i:scaleMR%.",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Bastion Silver effect: Your team gains {TeamwideArmor} Armor and Magic Resist. Bastions gain more.For the first {Duration} seconds of combat, Bastions increase their bonus by {StatMultiplier}%.({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% Non-Bastions gain an additional {EnhancedTeamwideArmor} %i:scaleArmor%%i:scaleMR%.",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Bastion Gold effect: Your team gains {TeamwideArmor} Armor and Magic Resist. Bastions gain more.For the first {Duration} seconds of combat, Bastions increase their bonus by {StatMultiplier}%.({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% ({MinUnits}) {BonusArmor} %i:scaleArmor%%i:scaleMR% Non-Bastions gain an additional {EnhancedTeamwideArmor} %i:scaleArmor%%i:scaleMR%.",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Bruiser": {
+    "name": "Bruiser",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Bruiser Bronze effect: Your team gains {TeamwideHealth} Health. Bruisers gain more.({MinUnits}) {HealthBonus}% %i:scaleHealth%",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Bruiser Silver effect: Your team gains {TeamwideHealth} Health. Bruisers gain more.({MinUnits}) {HealthBonus}% %i:scaleHealth%",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Bruiser Gold effect: Your team gains {TeamwideHealth} Health. Bruisers gain more.({MinUnits}) {HealthBonus}% %i:scaleHealth%",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Immortal": {
+    "name": "Golden Ox",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Golden Ox Bronze effect: Golden Ox gain Damage Amp and have a chance to drop gold on kill.If you spend @TFTUnitProperty.trait:TFT14_Immortal_GoldNeededForBreakpoint@ gold on rerolls or XP in a single turn, permanently increase their Damage Amp and the gold required for the next bonus. Rerolls count double towards gold spent.(Golden Ox must have fought last round)({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% loot, {ComponentDropChance}% chance loot is a componentCurrent Bonus: @TFTUnitProperty.trait:TFT14_Immortal_GoldBonusStacks@% %i:scaleDA%",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Golden Ox Silver effect: Golden Ox gain Damage Amp and have a chance to drop gold on kill.If you spend @TFTUnitProperty.trait:TFT14_Immortal_GoldNeededForBreakpoint@ gold on rerolls or XP in a single turn, permanently increase their Damage Amp and the gold required for the next bonus. Rerolls count double towards gold spent.(Golden Ox must have fought last round)({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% loot, {ComponentDropChance}% chance loot is a componentCurrent Bonus: @TFTUnitProperty.trait:TFT14_Immortal_GoldBonusStacks@% %i:scaleDA%",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Golden Ox Gold effect: Golden Ox gain Damage Amp and have a chance to drop gold on kill.If you spend @TFTUnitProperty.trait:TFT14_Immortal_GoldNeededForBreakpoint@ gold on rerolls or XP in a single turn, permanently increase their Damage Amp and the gold required for the next bonus. Rerolls count double towards gold spent.(Golden Ox must have fought last round)({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% gold({MinUnits}) {DamageAmp}% %i:scaleDA%, {KillDrop}% loot, {ComponentDropChance}% chance loot is a componentCurrent Bonus: @TFTUnitProperty.trait:TFT14_Immortal_GoldBonusStacks@% %i:scaleDA%",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Marksman": {
+    "name": "Marksman",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Marksman Bronze effect: Marksmen gain Attack Damage. After {EnhancedTime} seconds of combat, they increase their bonus by {EnhancedBonus}%.({MinUnits}) {BonusAD}%&nbsp;%i:scaleAD%({MinUnits}) {BonusAD}%&nbsp;%i:scaleAD%. After {EnhancedTime}&nbsp;seconds, gain {RepeatBonus}%&nbsp;%i:scaleAD% every {RepeatTime}&nbsp;seconds.",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Marksman Silver effect: Marksmen gain Attack Damage. After {EnhancedTime} seconds of combat, they increase their bonus by {EnhancedBonus}%.({MinUnits}) {BonusAD}%&nbsp;%i:scaleAD%({MinUnits}) {BonusAD}%&nbsp;%i:scaleAD%. After {EnhancedTime}&nbsp;seconds, gain {RepeatBonus}%&nbsp;%i:scaleAD% every {RepeatTime}&nbsp;seconds.",
+        "tierName": "Silver"
+      }
+    }
+  },
+  "TFT14_Swift": {
+    "name": "Rapidfire",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Rapidfire Bronze effect: Your team gains {TeamBonus}% Attack Speed. Rapidfire champions gain more on each attack, stacking up to {MaxStacks} times.({MinUnits}) {AttackSpeed}% %i:scaleAS% per stack",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Rapidfire Silver effect: Your team gains {TeamBonus}% Attack Speed. Rapidfire champions gain more on each attack, stacking up to {MaxStacks} times.({MinUnits}) {AttackSpeed}% %i:scaleAS% per stack",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Rapidfire Gold effect: Your team gains {TeamBonus}% Attack Speed. Rapidfire champions gain more on each attack, stacking up to {MaxStacks} times.({MinUnits}) {AttackSpeed}% %i:scaleAS% per stack",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Strong": {
+    "name": "Slayer",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Slayer Bronze effect: Slayers gain Attack Damage and Omnivamp. Overhealing heals the lowest percent Health Slayer for {OverhealPercent}% of the excess amount.({MinUnits}) {AttackDamage}% %i:scaleAD%, {Healing}% %i:scaleSV%",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Slayer Silver effect: Slayers gain Attack Damage and Omnivamp. Overhealing heals the lowest percent Health Slayer for {OverhealPercent}% of the excess amount.({MinUnits}) {AttackDamage}% %i:scaleAD%, {Healing}% %i:scaleSV%",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Slayer Gold effect: Slayers gain Attack Damage and Omnivamp. Overhealing heals the lowest percent Health Slayer for {OverhealPercent}% of the excess amount.({MinUnits}) {AttackDamage}% %i:scaleAD%, {Healing}% %i:scaleSV%",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Controller": {
+    "name": "Strategist",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Strategist Bronze effect: Combat Start: Allies in the back 2 rows gain Damage Amp. Allies in the front 2 rows gain Durability. Strategists get triple.({MinUnits}) {DamageAmp}% %i:scaleDA%, {Durability}% %i:scaleDR%",
+        "tierName": "Bronze"
+      },
+      "3": {
+        "level": 3,
+        "description": "Strategist Silver effect: Combat Start: Allies in the back 2 rows gain Damage Amp. Allies in the front 2 rows gain Durability. Strategists get triple.({MinUnits}) {DamageAmp}% %i:scaleDA%, {Durability}% %i:scaleDR%",
+        "tierName": "Silver"
+      },
+      "4": {
+        "level": 4,
+        "description": "Strategist Gold effect: Combat Start: Allies in the back 2 rows gain Damage Amp. Allies in the front 2 rows gain Durability. Strategists get triple.({MinUnits}) {DamageAmp}% %i:scaleDA%, {Durability}% %i:scaleDR%",
+        "tierName": "Gold"
+      },
+      "5": {
+        "level": 5,
+        "description": "Strategist Prismatic effect: Combat Start: Allies in the back 2 rows gain Damage Amp. Allies in the front 2 rows gain Durability. Strategists get triple.({MinUnits}) {DamageAmp}% %i:scaleDA%, {Durability}% %i:scaleDR%",
+        "tierName": "Prismatic"
+      }
+    }
+  },
+  "TFT14_Vanguard": {
+    "name": "Vanguard",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Vanguard Bronze effect: Vanguards gain {DamageReductionPct}% Durability while Shielded. Combat start and {HealthThreshold}%&nbsp;Health: Gain a max Health Shield for {ShieldDuration}&nbsp;seconds.({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health;{EnhancedDurability}%&nbsp;%i:scaleDR% while Shielded",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Vanguard Silver effect: Vanguards gain {DamageReductionPct}% Durability while Shielded. Combat start and {HealthThreshold}%&nbsp;Health: Gain a max Health Shield for {ShieldDuration}&nbsp;seconds.({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health;{EnhancedDurability}%&nbsp;%i:scaleDR% while Shielded",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Vanguard Gold effect: Vanguards gain {DamageReductionPct}% Durability while Shielded. Combat start and {HealthThreshold}%&nbsp;Health: Gain a max Health Shield for {ShieldDuration}&nbsp;seconds.({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health({MinUnits}) {ShieldPercentAmount}% max Health;{EnhancedDurability}%&nbsp;%i:scaleDR% while Shielded",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_AnimaSquad": {
+    "name": "Anima Squad",
+    "levels": {
+      "3": {
+        "level": 3,
+        "description": "Anima Squad Bronze effect: At each tier, pick a weapon that a random Anima Squad champion fires periodically during combat. Anima Squad champions gain Armor, Magic Resist, and Damage Amp.({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_1@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_2@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_3@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_4@Weapons scale with Anima Squad star level and stage.",
+        "tierName": "Bronze"
+      },
+      "5": {
+        "level": 5,
+        "description": "Anima Squad Silver effect: At each tier, pick a weapon that a random Anima Squad champion fires periodically during combat. Anima Squad champions gain Armor, Magic Resist, and Damage Amp.({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_1@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_2@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_3@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_4@Weapons scale with Anima Squad star level and stage.",
+        "tierName": "Silver"
+      },
+      "7": {
+        "level": 7,
+        "description": "Anima Squad Gold effect: At each tier, pick a weapon that a random Anima Squad champion fires periodically during combat. Anima Squad champions gain Armor, Magic Resist, and Damage Amp.({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_1@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_2@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_3@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_4@Weapons scale with Anima Squad star level and stage.",
+        "tierName": "Gold"
+      },
+      "10": {
+        "level": 10,
+        "description": "Anima Squad Prismatic effect: At each tier, pick a weapon that a random Anima Squad champion fires periodically during combat. Anima Squad champions gain Armor, Magic Resist, and Damage Amp.({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_1@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_2@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_3@({MinUnits}) {Resists} %i:scaleArmor%%i:scaleMR%, {DamageAmp}% %i:scaleDA%,@TFTUnitProperty.trait:TFT14_AnimaSquad_Bonus_4@Weapons scale with Anima Squad star level and stage.",
+        "tierName": "Prismatic"
+      }
+    }
+  },
+  "TFT14_BallisTek": {
+    "name": "BoomBot",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "BoomBot Bronze effect: BoomBots fire a missile every {DamageDealtThreshold} damage dealt at a nearby enemy that deals magic damage. {DamageTakenMod}% of damage taken contributes to damage dealt.({MinUnits}) {MissileDamage} magic damage({MinUnits}) {MissileDamage} magic damage({MinUnits}) Fire two missiles, each dealing {MissileDamage} magic damage",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "BoomBot Silver effect: BoomBots fire a missile every {DamageDealtThreshold} damage dealt at a nearby enemy that deals magic damage. {DamageTakenMod}% of damage taken contributes to damage dealt.({MinUnits}) {MissileDamage} magic damage({MinUnits}) {MissileDamage} magic damage({MinUnits}) Fire two missiles, each dealing {MissileDamage} magic damage",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "BoomBot Gold effect: BoomBots fire a missile every {DamageDealtThreshold} damage dealt at a nearby enemy that deals magic damage. {DamageTakenMod}% of damage taken contributes to damage dealt.({MinUnits}) {MissileDamage} magic damage({MinUnits}) {MissileDamage} magic damage({MinUnits}) Fire two missiles, each dealing {MissileDamage} magic damage",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Divinicorp": {
+    "name": "Divinicorp",
+    "levels": {
+      "1": {
+        "level": 1,
+        "description": "Divinicorp Bronze effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+        "tierName": "Bronze"
+      },
+      "2": {
+        "level": 2,
+        "description": "Divinicorp Silver effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+        "tierName": "Silver"
+      },
+      "3": {
+        "level": 3,
+        "description": "Divinicorp Gold effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+        "tierName": "Gold"
+      },
+      "4": {
+        "level": 4,
+        "description": "Divinicorp Prismatic effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+        "tierName": "Prismatic"
+      },
+      "5": {
+        "level": 5,
+        "description": "Divinicorp Diamond effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+        "tierName": "Diamond"
+      },
+      "6": {
+        "level": 6,
+        "description": "Divinicorp Unknown effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+        "tierName": "Unknown"
+      },
+      "7": {
+        "level": 7,
+        "description": "Divinicorp Unknown effect: Divinicorp champions grant unique stats to your team, increased for each Divinicorp in play. Divinicorp champions gain double.({MinUnits}) {DivinicorpBonus}%&nbsp;bonus.Morgana - &nbsp;%i:scaleAP% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AP@%Rhaast - &nbsp;%i:scaleArmor%&nbsp;%i:scaleMR% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Defenses@Senna - &nbsp;%i:scaleAD% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AD@%Gragas - &nbsp;%i:scaleHealth% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Health@Vex - &nbsp;%i:scaleCrit% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Crit@%Renekton - &nbsp;%i:scaleAS% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_AS@%Emblem - &nbsp;%i:scaleSV% @TFTUnitProperty.trait:TFT14_Trait_Divinicorp_Omnivamp@%",
+        "tierName": "Unknown"
+      }
+    }
+  },
+  "TFT14_EdgeRunner": {
+    "name": "Exotech",
+    "levels": {
+      "3": {
+        "level": 3,
+        "description": "Exotech Bronze effect: Gain unique items that can only be equipped by Exotech champions. They gain Health and Attack Speed for each item equipped.({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item1@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item2@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item3@ ({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,Enhance.",
+        "tierName": "Bronze"
+      },
+      "5": {
+        "level": 5,
+        "description": "Exotech Silver effect: Gain unique items that can only be equipped by Exotech champions. They gain Health and Attack Speed for each item equipped.({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item1@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item2@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item3@ ({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,Enhance.",
+        "tierName": "Silver"
+      },
+      "7": {
+        "level": 7,
+        "description": "Exotech Gold effect: Gain unique items that can only be equipped by Exotech champions. They gain Health and Attack Speed for each item equipped.({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item1@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item2@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item3@ ({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,Enhance.",
+        "tierName": "Gold"
+      },
+      "10": {
+        "level": 10,
+        "description": "Exotech Prismatic effect: Gain unique items that can only be equipped by Exotech champions. They gain Health and Attack Speed for each item equipped.({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item1@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item2@({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,@TFTUnitProperty.trait:TFT14_Cybernetic_Item3@ ({MinUnits}) {HealthBonus} %i:scaleHealth%, {ASBonus}% %i:scaleAS%,Enhance.",
+        "tierName": "Prismatic"
+      }
+    }
+  },
+  "TFT14_StreetDemon": {
+    "name": "Street Demon",
+    "levels": {
+      "3": {
+        "level": 3,
+        "description": "Street Demon Bronze effect: Allies in painted hexes gain Health, Ability Power, and Attack Damage. Some hexes are Signature hexes and grant {EmpoweredHexPercentBonus}% more. Street Demons double all bonuses.({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%Paint the town!",
+        "tierName": "Bronze"
+      },
+      "5": {
+        "level": 5,
+        "description": "Street Demon Silver effect: Allies in painted hexes gain Health, Ability Power, and Attack Damage. Some hexes are Signature hexes and grant {EmpoweredHexPercentBonus}% more. Street Demons double all bonuses.({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%Paint the town!",
+        "tierName": "Silver"
+      },
+      "7": {
+        "level": 7,
+        "description": "Street Demon Gold effect: Allies in painted hexes gain Health, Ability Power, and Attack Damage. Some hexes are Signature hexes and grant {EmpoweredHexPercentBonus}% more. Street Demons double all bonuses.({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%Paint the town!",
+        "tierName": "Gold"
+      },
+      "10": {
+        "level": 10,
+        "description": "Street Demon Prismatic effect: Allies in painted hexes gain Health, Ability Power, and Attack Damage. Some hexes are Signature hexes and grant {EmpoweredHexPercentBonus}% more. Street Demons double all bonuses.({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%({MinUnits}) +{HP}%&nbsp;%i:scaleHealth%, {ADAP}&nbsp;%i:scaleAP%, {ADAP}%&nbsp;%i:scaleAD%Paint the town!",
+        "tierName": "Prismatic"
+      }
+    }
+  },
+  "TFT14_Mob": {
+    "name": "Syndicate",
+    "levels": {
+      "3": {
+        "level": 3,
+        "description": "Syndicate Bronze effect: Get a Kingpin hat that uniquely upgrades a Syndicate champion's ability.Syndicate champions gain Health and Damage Amp.({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpin({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpins({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, Upgrade Kingpin effect",
+        "tierName": "Bronze"
+      },
+      "5": {
+        "level": 5,
+        "description": "Syndicate Silver effect: Get a Kingpin hat that uniquely upgrades a Syndicate champion's ability.Syndicate champions gain Health and Damage Amp.({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpin({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpins({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, Upgrade Kingpin effect",
+        "tierName": "Silver"
+      },
+      "7": {
+        "level": 7,
+        "description": "Syndicate Gold effect: Get a Kingpin hat that uniquely upgrades a Syndicate champion's ability.Syndicate champions gain Health and Damage Amp.({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpin({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, {NumBosses} Kingpins({MinUnits}) {MobHealth} %i:scaleHealth%, {DamageAmp}% %i:scaleDA%, Upgrade Kingpin effect",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Supercharge": {
+    "name": "A.M.P.",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "A.M.P. Bronze effect: A.M.P. champions upgrade their abilities in unique ways with Amp (%i:set14AmpIcon%). They also gain&nbsp;Health.({MinUnits}) {SuperchargeAmount} %i:set14AmpIcon%, {HPAmt} %i:scaleHealth%",
+        "tierName": "Bronze"
+      },
+      "3": {
+        "level": 3,
+        "description": "A.M.P. Silver effect: A.M.P. champions upgrade their abilities in unique ways with Amp (%i:set14AmpIcon%). They also gain&nbsp;Health.({MinUnits}) {SuperchargeAmount} %i:set14AmpIcon%, {HPAmt} %i:scaleHealth%",
+        "tierName": "Silver"
+      },
+      "4": {
+        "level": 4,
+        "description": "A.M.P. Gold effect: A.M.P. champions upgrade their abilities in unique ways with Amp (%i:set14AmpIcon%). They also gain&nbsp;Health.({MinUnits}) {SuperchargeAmount} %i:set14AmpIcon%, {HPAmt} %i:scaleHealth%",
+        "tierName": "Gold"
+      },
+      "5": {
+        "level": 5,
+        "description": "A.M.P. Prismatic effect: A.M.P. champions upgrade their abilities in unique ways with Amp (%i:set14AmpIcon%). They also gain&nbsp;Health.({MinUnits}) {SuperchargeAmount} %i:set14AmpIcon%, {HPAmt} %i:scaleHealth%",
+        "tierName": "Prismatic"
+      }
+    }
+  },
+  "TFT14_Cyberboss": {
+    "name": "Cyberboss",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Cyberboss Bronze effect: Your strongest Cyberboss upgrades to its final form and gains Health, Ability Power, and its ability hits more&nbsp;enemies.({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) All Cyberbosses upgrade. Your strongest Cyberboss gains {BigBossPercentHealth}% %i:scaleHealth% and {BigBossAP} %i:scaleAP%.",
+        "tierName": "Bronze"
+      },
+      "3": {
+        "level": 3,
+        "description": "Cyberboss Silver effect: Your strongest Cyberboss upgrades to its final form and gains Health, Ability Power, and its ability hits more&nbsp;enemies.({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) All Cyberbosses upgrade. Your strongest Cyberboss gains {BigBossPercentHealth}% %i:scaleHealth% and {BigBossAP} %i:scaleAP%.",
+        "tierName": "Silver"
+      },
+      "4": {
+        "level": 4,
+        "description": "Cyberboss Gold effect: Your strongest Cyberboss upgrades to its final form and gains Health, Ability Power, and its ability hits more&nbsp;enemies.({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) {BossPercentHealth}%&nbsp;%i:scaleHealth%, {BossAP}&nbsp;%i:scaleAP% ({MinUnits}) All Cyberbosses upgrade. Your strongest Cyberboss gains {BigBossPercentHealth}% %i:scaleHealth% and {BigBossAP} %i:scaleAP%.",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Suits": {
+    "name": "Cypher",
+    "levels": {
+      "3": {
+        "level": 3,
+        "description": "Cypher Bronze effect: Gain Intel by losing combat, increased for loss streaks. Gain a small amount for killing&nbsp;enemies. You may trade your Intel for loot one time on round{CashoutStage1}-{CashoutRound1}, {CashoutStage2}-{CashoutRound2}, {CashoutStage3}-{CashoutRound3}, {CashoutStage4}-{CashoutRound4}, or {CashoutStage5}-{CashoutRound5}.After trading Intel, Cypher champions gain Attack Damage and Ability Power.({MinUnits}) {ValueMultiplier}x Intel, {AttackDamage}% %i:scaleAD%%i:scaleAP%",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Cypher Silver effect: Gain Intel by losing combat, increased for loss streaks. Gain a small amount for killing&nbsp;enemies. You may trade your Intel for loot one time on round{CashoutStage1}-{CashoutRound1}, {CashoutStage2}-{CashoutRound2}, {CashoutStage3}-{CashoutRound3}, {CashoutStage4}-{CashoutRound4}, or {CashoutStage5}-{CashoutRound5}.After trading Intel, Cypher champions gain Attack Damage and Ability Power.({MinUnits}) {ValueMultiplier}x Intel, {AttackDamage}% %i:scaleAD%%i:scaleAP%",
+        "tierName": "Silver"
+      },
+      "5": {
+        "level": 5,
+        "description": "Cypher Gold effect: Gain Intel by losing combat, increased for loss streaks. Gain a small amount for killing&nbsp;enemies. You may trade your Intel for loot one time on round{CashoutStage1}-{CashoutRound1}, {CashoutStage2}-{CashoutRound2}, {CashoutStage3}-{CashoutRound3}, {CashoutStage4}-{CashoutRound4}, or {CashoutStage5}-{CashoutRound5}.After trading Intel, Cypher champions gain Attack Damage and Ability Power.({MinUnits}) {ValueMultiplier}x Intel, {AttackDamage}% %i:scaleAD%%i:scaleAP%",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_Thirsty": {
+    "name": "Dynamo",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Dynamo Bronze effect: Every {Timer} seconds, your team gains Mana. Dynamos gain {ThirstyBonus}% more.({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana%",
+        "tierName": "Bronze"
+      },
+      "3": {
+        "level": 3,
+        "description": "Dynamo Silver effect: Every {Timer} seconds, your team gains Mana. Dynamos gain {ThirstyBonus}% more.({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana%",
+        "tierName": "Silver"
+      },
+      "4": {
+        "level": 4,
+        "description": "Dynamo Gold effect: Every {Timer} seconds, your team gains Mana. Dynamos gain {ThirstyBonus}% more.({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana% ({MinUnits}) {Mana} %i:scaleMana%",
+        "tierName": "Gold"
+      }
+    }
+  },
+  "TFT14_HotRod": {
+    "name": "Nitro",
+    "levels": {
+      "3": {
+        "level": 3,
+        "description": "Nitro Bronze effect: Every round, unique Nitro champions grant Chrome to R-080T, based on their star level. Each Chrome grants {HealthPerScrap} Health and {APPerScrap} Ability Power. At {FourStarScrapThreshold} Chrome, it upgrades to T-43X! ({MinUnits}) Summon R-080T!({MinUnits}) Fire a giant laser!Chrome per star: {ScrapPerOneStar}/{ScrapPerTwoStar}/{ScrapPerThreeStar}/{ScrapPerFourStar}",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Nitro Silver effect: Every round, unique Nitro champions grant Chrome to R-080T, based on their star level. Each Chrome grants {HealthPerScrap} Health and {APPerScrap} Ability Power. At {FourStarScrapThreshold} Chrome, it upgrades to T-43X! ({MinUnits}) Summon R-080T!({MinUnits}) Fire a giant laser!Chrome per star: {ScrapPerOneStar}/{ScrapPerTwoStar}/{ScrapPerThreeStar}/{ScrapPerFourStar}",
+        "tierName": "Silver"
+      }
+    }
+  },
+  "TFT14_Techie": {
+    "name": "Techie",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Techie Bronze effect: Techies gain Ability Power.Enemies hit by their abilities deal {DamageAmpDebuff}% less damage for {DebuffDuration} seconds.({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP% Enemies hit deal {EnhancedDebuff}% less damage.",
+        "tierName": "Bronze"
+      },
+      "4": {
+        "level": 4,
+        "description": "Techie Silver effect: Techies gain Ability Power.Enemies hit by their abilities deal {DamageAmpDebuff}% less damage for {DebuffDuration} seconds.({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP% Enemies hit deal {EnhancedDebuff}% less damage.",
+        "tierName": "Silver"
+      },
+      "6": {
+        "level": 6,
+        "description": "Techie Gold effect: Techies gain Ability Power.Enemies hit by their abilities deal {DamageAmpDebuff}% less damage for {DebuffDuration} seconds.({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP% Enemies hit deal {EnhancedDebuff}% less damage.",
+        "tierName": "Gold"
+      },
+      "8": {
+        "level": 8,
+        "description": "Techie Prismatic effect: Techies gain Ability Power.Enemies hit by their abilities deal {DamageAmpDebuff}% less damage for {DebuffDuration} seconds.({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP%({MinUnits}) {APBonus} %i:scaleAP% Enemies hit deal {EnhancedDebuff}% less damage.",
+        "tierName": "Prismatic"
+      }
+    }
+  },
+  "TFT14_Netgod": {
+    "name": "God of the Net",
+    "levels": {
+      "1": {
+        "level": 1,
+        "description": "After {Rounds} player combats, open an Armory of Trait Mods that permanently reprogram a champion to benefit from a trait (but not contribute).Every time you get a Trait Mod, the next one requires {RoundIncrement} additional round.Rounds remaining: @TFTUnitProperty.trait:TFT14_Netgod_RoundsRemaining@Champions can only have one Trait Mod.Equipped Mods:@TFTUnitProperty.trait:TFT14_Netgod_Trait1@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ1@@TFTUnitProperty.trait:TFT14_Netgod_Trait2@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ2@@TFTUnitProperty.trait:TFT14_Netgod_Trait3@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ3@@TFTUnitProperty.trait:TFT14_Netgod_Trait4@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ4@@TFTUnitProperty.trait:TFT14_Netgod_Trait5@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ5@@TFTUnitProperty.trait:TFT14_Netgod_Trait6@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ6@@TFTUnitProperty.trait:TFT14_Netgod_Trait7@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ7@@TFTUnitProperty.trait:TFT14_Netgod_Trait8@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ8@@TFTUnitProperty.trait:TFT14_Netgod_Trait9@ - @TFTUnitProperty.trait:TFT14_Netgod_Champ9@",
+        "tierName": "Unique"
+      }
+    }
+  },
+  "TFT14_Overlord": {
+    "name": "Overlord",
+    "levels": {
+      "1": {
+        "level": 1,
+        "description": "The Overlord takes a bite out of the unit in the hex behind him, dealing {HPPercentDamage}% of their max Health as true damage. He gains {PercentHPGain}% of their Health and {PercentADGain}% of their Attack Damage.",
+        "tierName": "Unique"
+      }
+    }
+  },
+  "TFT14_ViegoUniqueTrait": {
+    "name": "Soul Killer",
+    "levels": {
+      "1": {
+        "level": 1,
+        "description": "Gain a hologram copy of the highest cost enemy Viego helped kill last round. It has {Level1Health}/{Level2Health}/{Level3Health} Health, deals {Level1Damage}%/{Level2Damage}%/{Level3Damage}% damage, and has {ItemCount} recommended item.",
+        "tierName": "Unique"
+      }
+    }
+  },
+  "TFT14_Virus": {
+    "name": "Virus",
+    "levels": {
+      "1": {
+        "level": 1,
+        "description": "The Virus infects your shop with a {ChanceToSee}% chance to spawn a bloblet. When purchased, it merges and increases the strongest Zac's max Health by {BonusPercentHPPerStack}% and Ability Power by {BonusAPPerStack} (doubled in Hyper Roll). (Total Bloblets: @TFTUnitProperty.trait:TFT14_Virus_Stacks@)",
+        "tierName": "Unique"
+      }
+    }
+  },
+  "TFT14_Cutter": {
+    "name": "Executioner",
+    "levels": {
+      "2": {
+        "level": 2,
+        "description": "Executioner Bronze effect: Executioner Abilities can critically strike. They also gain bonus Critical Strike Chance and Critical Strike Damage.If the target's Health is below {HealthThreshold}%, the bonus Critical Strike Damage is doubled.({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%; also gain {DamageReduction}% Durability",
+        "tierName": "Bronze"
+      },
+      "3": {
+        "level": 3,
+        "description": "Executioner Silver effect: Executioner Abilities can critically strike. They also gain bonus Critical Strike Chance and Critical Strike Damage.If the target's Health is below {HealthThreshold}%, the bonus Critical Strike Damage is doubled.({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%; also gain {DamageReduction}% Durability",
+        "tierName": "Silver"
+      },
+      "4": {
+        "level": 4,
+        "description": "Executioner Gold effect: Executioner Abilities can critically strike. They also gain bonus Critical Strike Chance and Critical Strike Damage.If the target's Health is below {HealthThreshold}%, the bonus Critical Strike Damage is doubled.({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%; also gain {DamageReduction}% Durability",
+        "tierName": "Gold"
+      },
+      "5": {
+        "level": 5,
+        "description": "Executioner Prismatic effect: Executioner Abilities can critically strike. They also gain bonus Critical Strike Chance and Critical Strike Damage.If the target's Health is below {HealthThreshold}%, the bonus Critical Strike Damage is doubled.({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%({MinUnits}) {CRIT_PERCENT}%&nbsp;%i:scaleCrit%, {CRIT_DAMAGE}%&nbsp;%i:scaleCritMult%; also gain {DamageReduction}% Durability",
+        "tierName": "Prismatic"
+      }
+    }
+  }
+}

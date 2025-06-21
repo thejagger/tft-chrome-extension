@@ -1,0 +1,82 @@
+{
+  "note": "These traits have verified activation levels",
+  "count": 4,
+  "traits": [
+    {
+      "key": "TFT14_Bruiser",
+      "name": "Bruiser",
+      "displayName": "Bruiser",
+      "image": "Trait_Icon_14_Bruiser.TFT_Set14.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Bruisers gain Health",
+        "4": "Bruisers gain more Health",
+        "6": "Bruisers gain maximum Health"
+      },
+      "source": "verified",
+      "searchText": "bruiser bruisers gain health bruisers gain more health bruisers gain maximum health",
+      "isVerified": true,
+      "needsResearch": false
+    },
+    {
+      "key": "TFT14_Marksman",
+      "name": "Marksman",
+      "displayName": "Marksman",
+      "image": "Trait_Icon_14_Marksman.TFT_Set14.png",
+      "type": "class",
+      "activationLevels": [
+        2,
+        4,
+        6
+      ],
+      "descriptions": {
+        "2": "Marksmen gain Attack Speed",
+        "4": "Marksmen gain more Attack Speed",
+        "6": "Marksmen gain maximum Attack Speed"
+      },
+      "source": "verified",
+      "searchText": "marksman marksmen gain attack speed marksmen gain more attack speed marksmen gain maximum attack speed",
+      "isVerified": true,
+      "needsResearch": false
+    },
+    {
+      "key": "TFT14_ViegoUniqueTrait",
+      "name": "Soul Killer",
+      "displayName": "Soul Killer",
+      "image": "Trait_Icon_14_SoulKiller.TFT_Set14.png",
+      "type": "unique",
+      "activationLevels": [
+        1
+      ],
+      "descriptions": {
+        "1": "Soul Killer unique ability"
+      },
+      "source": "verified",
+      "searchText": "soul killer soul killer unique ability",
+      "isVerified": true,
+      "needsResearch": false
+    },
+    {
+      "key": "TFT14_Virus",
+      "name": "Virus",
+      "displayName": "Virus",
+      "image": "Trait_Icon_14_Virus.TFT_Set14.png",
+      "type": "unique",
+      "activationLevels": [
+        1
+      ],
+      "descriptions": {
+        "1": "Virus effect when this champion is on the field"
+      },
+      "source": "verified",
+      "searchText": "virus virus effect when this champion is on the field",
+      "isVerified": true,
+      "needsResearch": false
+    }
+  ]
+}
